@@ -1,0 +1,188 @@
+{
+  "dataset_name": "regional_pawn_market_conditions",
+  "dataset_version": "2026-04-03",
+  "scenario_name": "holiday_liquidity_spike",
+  "scenario_signature": "d9d36e5cfb9555d5b3dc5e1041294ef4ea70d7ba9f84dc514b01b903a656a303",
+  "schema_signature": "a628807ed14d6832a5bea9478de89fdd387b59fe07eadd2f5c4f7839d9036f74",
+  "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+  "row_count": 252,
+  "build_timestamp": "2026-04-03T21:33:01.934822+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-03_12ef10216e0d",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-03_12ef10216e0d\\regional_pawn_market_conditions.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-03_12ef10216e0d\\regional_pawn_market_conditions.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-03_12ef10216e0d\\regional_pawn_market_conditions.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-03_12ef10216e0d\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-03_12ef10216e0d\\metadata.json",
+  "schema": [
+    {
+      "name": "region",
+      "type": "string"
+    },
+    {
+      "name": "year",
+      "type": "integer"
+    },
+    {
+      "name": "month",
+      "type": "integer"
+    },
+    {
+      "name": "synthetic_unemployment_proxy",
+      "type": "float"
+    },
+    {
+      "name": "synthetic_consumer_stress_index",
+      "type": "float"
+    },
+    {
+      "name": "avg_loan_amount",
+      "type": "float"
+    },
+    {
+      "name": "loan_volume_index",
+      "type": "float"
+    },
+    {
+      "name": "redeem_rate",
+      "type": "float"
+    },
+    {
+      "name": "default_rate",
+      "type": "float"
+    },
+    {
+      "name": "gold_dependency_index",
+      "type": "float"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic macro and regional operating environment indicators for pawn and collateral lending.",
+  "scenario_narrative": "Short-term borrowing activity increases around holiday periods, especially for smaller durations and mixed collateral.",
+  "validation_metrics": {
+    "row_count": 252,
+    "null_counts": {
+      "region": 0,
+      "year": 0,
+      "month": 0,
+      "synthetic_unemployment_proxy": 0,
+      "synthetic_consumer_stress_index": 0,
+      "avg_loan_amount": 0,
+      "loan_volume_index": 0,
+      "redeem_rate": 0,
+      "default_rate": 0,
+      "gold_dependency_index": 0
+    },
+    "stress_default_corr": 0.6896
+  },
+  "realism_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "null_threshold",
+        "passed": true,
+        "detail": "No nulls in required fields"
+      },
+      {
+        "name": "stress_default_correlation",
+        "passed": true,
+        "detail": "corr=0.6896"
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "dataset_summary": "Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 252 rows under the holiday liquidity spike scenario.",
+  "key_observations": [
+    "Consumer stress and default rates move together with a modeled correlation of 0.69.",
+    "Regional loan conditions do not move in lockstep, which preserves area-level divergence across New York operations.",
+    "This build includes 252 monthly regional records under the holiday liquidity spike scenario for longitudinal analysis."
+  ],
+  "related_dataset_references": [],
+  "seed": 228117105584113,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "regional_pawn_market_conditions:2026-04-03:holiday_liquidity_spike",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": null,
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-03_12ef10216e0d\\artifact_manifest.json",
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml"
+  ],
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": null,
+    "github": null,
+    "kaggle": null,
+    "mendeley_data": null,
+    "openml": null,
+    "zenodo": null
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": false
+  },
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      }
+    ],
+    "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a"
+  },
+  "cross_platform_references": {
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47166",
+      "doi": null,
+      "artifact_id": "47166"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-regional-pawn-market-conditions"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "dataset_name": "regional_pawn_market_conditions",
+  "dataset_version": "2026-04-03",
+  "scenario_name": "holiday_liquidity_spike",
+  "row_count": 252,
+  "dataset_summary": "Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 252 rows under the holiday liquidity spike scenario.",
+  "key_observations": [
+    "Consumer stress and default rates move together with a modeled correlation of 0.69.",
+    "Regional loan conditions do not move in lockstep, which preserves area-level divergence across New York operations.",
+    "This build includes 252 monthly regional records under the holiday liquidity spike scenario for longitudinal analysis."
+  ],
+  "related_dataset_references": [],
+  "cross_platform_references": {
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47166",
+      "doi": null,
+      "artifact_id": "47166"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-regional-pawn-market-conditions"
+    }
+  },
+  "github_urls": {
+    "master_index": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "family_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/README.md",
+    "version_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-03/README.md"
+  }
+}

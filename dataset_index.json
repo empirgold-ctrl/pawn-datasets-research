@@ -1,6 +1,50 @@
 {
-  "generated_utc": "2026-04-03T21:34:26.856641+00:00",
+  "generated_utc": "2026-04-04T00:41:01.559002+00:00",
   "families": [
+    {
+      "dataset_name": "pawn_loan_activity",
+      "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+      "family_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/README.md",
+      "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+      "versions": [
+        {
+          "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+          "dataset_version": "2026-04-04",
+          "scenario_name": "baseline",
+          "row_count": 12344,
+          "build_timestamp": "2026-04-04T00:39:44.684310+00:00",
+          "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,344 rows under the baseline scenario.",
+          "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+          "key_observations": [
+            "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.72x the median ticket size.",
+            "Repeat customers default at 2.3% versus 8.1% for non-repeat borrowers.",
+            "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19411864",
+              "doi": "10.5281/zenodo.19411864"
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47167",
+              "doi": null
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+              "doi": null
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-04/README.md",
+              "doi": null
+            }
+          }
+        }
+      ],
+      "latest_version": "2026-04-04",
+      "latest_scenario": "baseline",
+      "latest_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,344 rows under the baseline scenario."
+    },
     {
       "dataset_name": "regional_pawn_market_conditions",
       "description": "Synthetic macro and regional operating environment indicators for pawn and collateral lending.",
@@ -8,6 +52,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "regional_pawn_market_conditions",
           "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
           "dataset_version": "2026-04-03",
           "scenario_name": "holiday_liquidity_spike",
@@ -22,21 +67,21 @@
           ],
           "realism_score": 1.0,
           "links": {
-            "zenodo": {
-              "external_url": "https://zenodo.org/record/19411057",
-              "doi": "10.5281/zenodo.19411057"
-            },
-            "openml": {
-              "external_url": "https://www.openml.org/d/47166",
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-03/README.md",
               "doi": null
             },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
               "doi": null
             },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-03/README.md",
+            "openml": {
+              "external_url": "https://www.openml.org/d/47166",
               "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19411057",
+              "doi": "10.5281/zenodo.19411057"
             }
           }
         }

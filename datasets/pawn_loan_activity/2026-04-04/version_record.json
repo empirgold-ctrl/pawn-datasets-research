@@ -1,0 +1,54 @@
+{
+  "dataset_name": "pawn_loan_activity",
+  "dataset_version": "2026-04-04",
+  "scenario_name": "baseline",
+  "row_count": 12344,
+  "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,344 rows under the baseline scenario.",
+  "key_observations": [
+    "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.72x the median ticket size.",
+    "Repeat customers default at 2.3% versus 8.1% for non-repeat borrowers.",
+    "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    }
+  ],
+  "cross_platform_references": {
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47167",
+      "doi": null,
+      "artifact_id": "47167"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-pawn-loan-activity-open"
+    }
+  },
+  "github_urls": {
+    "master_index": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "family_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/README.md",
+    "version_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-04/README.md"
+  }
+}

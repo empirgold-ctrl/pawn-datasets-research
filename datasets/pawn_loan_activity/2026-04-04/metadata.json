@@ -1,0 +1,253 @@
+{
+  "dataset_name": "pawn_loan_activity",
+  "dataset_version": "2026-04-04",
+  "scenario_name": "baseline",
+  "scenario_signature": "ac9fdb54b49398e40c5486382a85c4e55ea656e234555249e2f968b4d877d904",
+  "schema_signature": "623ef824fbf7b0031143587f19d1b1c1d35054f8367f77584b31bf413be73b84",
+  "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+  "row_count": 12344,
+  "build_timestamp": "2026-04-04T00:39:44.684310+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-04_ecf983e9fc2d",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-04_ecf983e9fc2d\\pawn_loan_activity.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-04_ecf983e9fc2d\\pawn_loan_activity.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-04_ecf983e9fc2d\\pawn_loan_activity.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-04_ecf983e9fc2d\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-04_ecf983e9fc2d\\metadata.json",
+  "schema": [
+    {
+      "name": "record_id",
+      "type": "string"
+    },
+    {
+      "name": "year",
+      "type": "integer"
+    },
+    {
+      "name": "month",
+      "type": "integer"
+    },
+    {
+      "name": "store_region",
+      "type": "string"
+    },
+    {
+      "name": "item_category",
+      "type": "string"
+    },
+    {
+      "name": "metal_type",
+      "type": "string"
+    },
+    {
+      "name": "loan_amount",
+      "type": "float"
+    },
+    {
+      "name": "estimated_item_value",
+      "type": "float"
+    },
+    {
+      "name": "loan_to_value_ratio",
+      "type": "float"
+    },
+    {
+      "name": "loan_duration_days",
+      "type": "integer"
+    },
+    {
+      "name": "monthly_interest_rate",
+      "type": "float"
+    },
+    {
+      "name": "customer_segment",
+      "type": "string"
+    },
+    {
+      "name": "repeat_customer_flag",
+      "type": "integer"
+    },
+    {
+      "name": "default_flag",
+      "type": "integer"
+    },
+    {
+      "name": "redeem_flag",
+      "type": "integer"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+  "scenario_narrative": "Baseline operating conditions with steady category mix, realistic outliers, and moderate seasonal movement.",
+  "validation_metrics": {
+    "row_count": 12344,
+    "null_counts": {
+      "record_id": 0,
+      "year": 0,
+      "month": 0,
+      "store_region": 0,
+      "item_category": 0,
+      "metal_type": 0,
+      "loan_amount": 0,
+      "estimated_item_value": 0,
+      "loan_to_value_ratio": 0,
+      "loan_duration_days": 0,
+      "monthly_interest_rate": 0,
+      "customer_segment": 0,
+      "repeat_customer_flag": 0,
+      "default_flag": 0,
+      "redeem_flag": 0
+    },
+    "loan_amount_p95_to_median": 4.717814401418382,
+    "repeat_default_rate": 0.0234,
+    "new_default_rate": 0.0812
+  },
+  "realism_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "null_threshold",
+        "passed": true,
+        "detail": "No nulls in required fields"
+      },
+      {
+        "name": "positive_loan_amounts",
+        "passed": true,
+        "detail": "All loan amounts positive"
+      },
+      {
+        "name": "heavy_tail_distribution",
+        "passed": true,
+        "detail": "p95/median=4.72"
+      },
+      {
+        "name": "impossible_combinations",
+        "passed": true,
+        "detail": "count=0"
+      },
+      {
+        "name": "repeat_customer_correlation",
+        "passed": true,
+        "detail": "repeat=0.0234 new=0.0812"
+      },
+      {
+        "name": "loan_to_value_bounds",
+        "passed": true,
+        "detail": "min=0.2110 max=0.8951"
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,344 rows under the baseline scenario.",
+  "key_observations": [
+    "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.72x the median ticket size.",
+    "Repeat customers default at 2.3% versus 8.1% for non-repeat borrowers.",
+    "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    }
+  ],
+  "seed": 133644390576245,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "pawn_loan_activity:2026-04-04:baseline",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": {
+    "platform": "github_index",
+    "label": "Full dataset index",
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-04_ecf983e9fc2d\\artifact_manifest.json",
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml"
+  ],
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": null,
+    "github": null,
+    "kaggle": null,
+    "mendeley_data": null,
+    "openml": null,
+    "zenodo": null
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": true
+  },
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      }
+    ],
+    "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c"
+  },
+  "cross_platform_references": {
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47167",
+      "doi": null,
+      "artifact_id": "47167"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-pawn-loan-activity-open"
+    }
+  }
+}

@@ -1,6 +1,50 @@
 {
-  "generated_utc": "2026-04-04T00:41:01.559002+00:00",
+  "generated_utc": "2026-04-05T14:31:42.400480+00:00",
   "families": [
+    {
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "description": "Synthetic time-series linking gold price movements to pawn loan volume and average ticket size.",
+      "family_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/README.md",
+      "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+      "versions": [
+        {
+          "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
+          "dataset_version": "2026-04-05",
+          "scenario_name": "high_gold_price_cycle",
+          "row_count": 833,
+          "build_timestamp": "2026-04-05T14:28:03.264268+00:00",
+          "dataset_summary": "Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 833 rows under the high gold price cycle scenario.",
+          "description": "Synthetic time-series linking gold price movements to pawn loan volume and average ticket size.",
+          "key_observations": [
+            "Gold prices keep a directional time-series trend instead of flat noise, with a time correlation of 0.98.",
+            "Average jewelry loan amounts move with gold prices, with a modeled correlation of 0.93.",
+            "This build contributes 833 daily observations so macro shifts can be studied without losing regional variation."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19429678",
+              "doi": "10.5281/zenodo.19429678"
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47168",
+              "doi": null
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity",
+              "doi": null
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-05/README.md",
+              "doi": null
+            }
+          }
+        }
+      ],
+      "latest_version": "2026-04-05",
+      "latest_scenario": "high_gold_price_cycle",
+      "latest_summary": "Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 833 rows under the high gold price cycle scenario."
+    },
     {
       "dataset_name": "pawn_loan_activity",
       "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
@@ -8,6 +52,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "pawn_loan_activity",
           "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
           "dataset_version": "2026-04-04",
           "scenario_name": "baseline",
@@ -22,21 +67,21 @@
           ],
           "realism_score": 1.0,
           "links": {
-            "zenodo": {
-              "external_url": "https://zenodo.org/record/19411864",
-              "doi": "10.5281/zenodo.19411864"
-            },
-            "openml": {
-              "external_url": "https://www.openml.org/d/47167",
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-04/README.md",
               "doi": null
             },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
               "doi": null
             },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-04/README.md",
+            "openml": {
+              "external_url": "https://www.openml.org/d/47167",
               "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19411864",
+              "doi": "10.5281/zenodo.19411864"
             }
           }
         }

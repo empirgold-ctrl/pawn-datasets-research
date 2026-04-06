@@ -21,78 +21,78 @@
     "The consumer stress cycle scenario keeps repeat, new, and stress-driven segments distinct enough for downstream modeling and retrieval."
   ],
   "validation_summary": {
-    "realism_score": 1.0,
     "checks": [
       {
+        "detail": "No nulls in required fields",
         "name": "null_threshold",
-        "passed": true,
-        "detail": "No nulls in required fields"
+        "passed": true
       },
       {
+        "detail": "mean=4.3056",
         "name": "visit_frequency_distribution",
-        "passed": true,
-        "detail": "mean=4.3056"
+        "passed": true
       },
       {
+        "detail": "corr=0.4816",
         "name": "ticket_default_correlation",
-        "passed": true,
-        "detail": "corr=0.4816"
+        "passed": true
       }
     ],
-    "impossible_combination_count": 0
+    "impossible_combination_count": 0,
+    "realism_score": 1.0
   },
   "related_dataset_references": [
     {
+      "artifact_id": "19411057",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00",
       "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
       "dataset_name": "regional_pawn_market_conditions",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19411057",
-      "doi": "10.5281/zenodo.19411057",
-      "artifact_id": "19411057",
-      "status": "published",
       "dataset_version": "2026-04-03",
+      "doi": "10.5281/zenodo.19411057",
+      "external_url": "https://zenodo.org/record/19411057",
+      "platform": "zenodo",
       "scenario_name": "holiday_liquidity_spike",
-      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+      "status": "published"
     },
     {
+      "artifact_id": "19411864",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00",
       "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
       "dataset_name": "pawn_loan_activity",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19411864",
-      "doi": "10.5281/zenodo.19411864",
-      "artifact_id": "19411864",
-      "status": "published",
       "dataset_version": "2026-04-04",
+      "doi": "10.5281/zenodo.19411864",
+      "external_url": "https://zenodo.org/record/19411864",
+      "platform": "zenodo",
       "scenario_name": "baseline",
-      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+      "status": "published"
     },
     {
+      "artifact_id": "19429678",
+      "build_timestamp": "2026-04-05T14:28:03.264268+00:00",
       "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
       "dataset_name": "gold_price_vs_pawn_activity",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19429678",
-      "doi": "10.5281/zenodo.19429678",
-      "artifact_id": "19429678",
-      "status": "published",
       "dataset_version": "2026-04-05",
+      "doi": "10.5281/zenodo.19429678",
+      "external_url": "https://zenodo.org/record/19429678",
+      "platform": "zenodo",
       "scenario_name": "high_gold_price_cycle",
-      "build_timestamp": "2026-04-05T14:28:03.264268+00:00"
+      "status": "published"
     }
   ],
   "cross_platform_references": {
     "zenodo": {
       "platform": "zenodo",
       "label": "Zenodo archive record",
-      "external_url": "https://zenodo.org/record/19433242",
-      "doi": "10.5281/zenodo.19433242",
-      "artifact_id": "19433242"
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262"
     },
     "openml": {
       "platform": "openml",
       "label": "OpenML dataset record",
-      "external_url": "https://www.openml.org/d/47169",
+      "external_url": "https://www.openml.org/d/47170",
       "doi": null,
-      "artifact_id": "47169"
+      "artifact_id": "47170"
     },
     "kaggle": {
       "platform": "kaggle",
@@ -104,9 +104,9 @@
   },
   "cross_link_verification": {},
   "authority_root_reference": {
-    "platform": "github_index",
-    "label": "Full dataset index",
     "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "label": "Full dataset index",
+    "platform": "github_index",
     "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
   },
   "authority_complete": false,

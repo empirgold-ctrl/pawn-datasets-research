@@ -1,6 +1,50 @@
 {
-  "generated_utc": "2026-04-05T14:31:42.400480+00:00",
+  "generated_utc": "2026-04-06T00:04:06.928242+00:00",
   "families": [
+    {
+      "dataset_name": "customer_behavior_segments",
+      "description": "Synthetic behavioral segmentation of pawn customer patterns without identifying real individuals.",
+      "family_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/README.md",
+      "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+      "versions": [
+        {
+          "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+          "dataset_version": "2026-04-06",
+          "scenario_name": "consumer_stress_cycle",
+          "row_count": 7136,
+          "build_timestamp": "2026-04-06T00:00:16.594866+00:00",
+          "dataset_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 7,136 rows under the consumer stress cycle scenario.",
+          "description": "Synthetic behavioral segmentation of pawn customer patterns without identifying real individuals.",
+          "key_observations": [
+            "Average annual visit frequency is 4.31, supporting repeat-use behavior instead of one-off random records.",
+            "Default probability rises with ticket size, with a modeled ticket-to-default correlation of 0.48.",
+            "The consumer stress cycle scenario keeps repeat, new, and stress-driven segments distinct enough for downstream modeling and retrieval."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19433242",
+              "doi": "10.5281/zenodo.19433242"
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47169",
+              "doi": null
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments",
+              "doi": null
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-06/README.md",
+              "doi": null
+            }
+          }
+        }
+      ],
+      "latest_version": "2026-04-06",
+      "latest_scenario": "consumer_stress_cycle",
+      "latest_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 7,136 rows under the consumer stress cycle scenario."
+    },
     {
       "dataset_name": "gold_price_vs_pawn_activity",
       "description": "Synthetic time-series linking gold price movements to pawn loan volume and average ticket size.",
@@ -8,6 +52,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "gold_price_vs_pawn_activity",
           "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
           "dataset_version": "2026-04-05",
           "scenario_name": "high_gold_price_cycle",
@@ -22,21 +67,21 @@
           ],
           "realism_score": 1.0,
           "links": {
-            "zenodo": {
-              "external_url": "https://zenodo.org/record/19429678",
-              "doi": "10.5281/zenodo.19429678"
-            },
-            "openml": {
-              "external_url": "https://www.openml.org/d/47168",
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-05/README.md",
               "doi": null
             },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity",
               "doi": null
             },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-05/README.md",
+            "openml": {
+              "external_url": "https://www.openml.org/d/47168",
               "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19429678",
+              "doi": "10.5281/zenodo.19429678"
             }
           }
         }

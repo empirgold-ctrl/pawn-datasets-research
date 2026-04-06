@@ -55,41 +55,41 @@
   "description": "Synthetic behavioral segmentation of pawn customer patterns without identifying real individuals.",
   "scenario_narrative": "Loan demand and default pressure both increase under higher synthetic consumer stress, while redeem rates compress modestly.",
   "validation_metrics": {
-    "row_count": 7136,
+    "avg_ticket_default_corr": 0.4816,
     "null_counts": {
-      "synthetic_customer_id": 0,
-      "region": 0,
-      "segment_type": 0,
       "annual_visit_frequency": 0,
       "avg_ticket_size": 0,
-      "preferred_collateral_type": 0,
-      "repeat_rate": 0,
       "estimated_default_probability": 0,
-      "seasonality_bias": 0
+      "preferred_collateral_type": 0,
+      "region": 0,
+      "repeat_rate": 0,
+      "seasonality_bias": 0,
+      "segment_type": 0,
+      "synthetic_customer_id": 0
     },
-    "visit_frequency_mean": 4.3056,
-    "avg_ticket_default_corr": 0.4816
+    "row_count": 7136,
+    "visit_frequency_mean": 4.3056
   },
   "realism_summary": {
-    "realism_score": 1.0,
     "checks": [
       {
+        "detail": "No nulls in required fields",
         "name": "null_threshold",
-        "passed": true,
-        "detail": "No nulls in required fields"
+        "passed": true
       },
       {
+        "detail": "mean=4.3056",
         "name": "visit_frequency_distribution",
-        "passed": true,
-        "detail": "mean=4.3056"
+        "passed": true
       },
       {
+        "detail": "corr=0.4816",
         "name": "ticket_default_correlation",
-        "passed": true,
-        "detail": "corr=0.4816"
+        "passed": true
       }
     ],
-    "impossible_combination_count": 0
+    "impossible_combination_count": 0,
+    "realism_score": 1.0
   },
   "dataset_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 7,136 rows under the consumer stress cycle scenario.",
   "key_observations": [
@@ -99,40 +99,40 @@
   ],
   "related_dataset_references": [
     {
+      "artifact_id": "19411057",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00",
       "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
       "dataset_name": "regional_pawn_market_conditions",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19411057",
-      "doi": "10.5281/zenodo.19411057",
-      "artifact_id": "19411057",
-      "status": "published",
       "dataset_version": "2026-04-03",
+      "doi": "10.5281/zenodo.19411057",
+      "external_url": "https://zenodo.org/record/19411057",
+      "platform": "zenodo",
       "scenario_name": "holiday_liquidity_spike",
-      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+      "status": "published"
     },
     {
+      "artifact_id": "19411864",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00",
       "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
       "dataset_name": "pawn_loan_activity",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19411864",
-      "doi": "10.5281/zenodo.19411864",
-      "artifact_id": "19411864",
-      "status": "published",
       "dataset_version": "2026-04-04",
+      "doi": "10.5281/zenodo.19411864",
+      "external_url": "https://zenodo.org/record/19411864",
+      "platform": "zenodo",
       "scenario_name": "baseline",
-      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+      "status": "published"
     },
     {
+      "artifact_id": "19429678",
+      "build_timestamp": "2026-04-05T14:28:03.264268+00:00",
       "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
       "dataset_name": "gold_price_vs_pawn_activity",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19429678",
-      "doi": "10.5281/zenodo.19429678",
-      "artifact_id": "19429678",
-      "status": "published",
       "dataset_version": "2026-04-05",
+      "doi": "10.5281/zenodo.19429678",
+      "external_url": "https://zenodo.org/record/19429678",
+      "platform": "zenodo",
       "scenario_name": "high_gold_price_cycle",
-      "build_timestamp": "2026-04-05T14:28:03.264268+00:00"
+      "status": "published"
     }
   ],
   "seed": 38720112752600,
@@ -143,32 +143,12 @@
   "authority_complete": false,
   "authority_summary": {},
   "authority_root_reference": {
-    "platform": "github_index",
-    "label": "Full dataset index",
     "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "label": "Full dataset index",
+    "platform": "github_index",
     "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
   },
   "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-06_6c7f40cf139b\\artifact_manifest.json",
-  "target_platforms": [
-    "zenodo",
-    "kaggle",
-    "github",
-    "figshare",
-    "openml"
-  ],
-  "prior_publications": {
-    "data_world": null,
-    "dataverse": null,
-    "figshare": null,
-    "github": null,
-    "kaggle": null,
-    "mendeley_data": null,
-    "openml": null,
-    "zenodo": null
-  },
-  "platform_backlink_requirements": {
-    "github_backlinks_required": true
-  },
   "external_publication_targets": {
     "enabled": true,
     "targets": [
@@ -205,20 +185,40 @@
     ],
     "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd"
   },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": true
+  },
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": null,
+    "github": null,
+    "kaggle": null,
+    "mendeley_data": null,
+    "openml": null,
+    "zenodo": null
+  },
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml"
+  ],
   "cross_platform_references": {
     "zenodo": {
       "platform": "zenodo",
       "label": "Zenodo archive record",
-      "external_url": "https://zenodo.org/record/19433242",
-      "doi": "10.5281/zenodo.19433242",
-      "artifact_id": "19433242"
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262"
     },
     "openml": {
       "platform": "openml",
       "label": "OpenML dataset record",
-      "external_url": "https://www.openml.org/d/47169",
+      "external_url": "https://www.openml.org/d/47170",
       "doi": null,
-      "artifact_id": "47169"
+      "artifact_id": "47170"
     },
     "kaggle": {
       "platform": "kaggle",

@@ -45,7 +45,7 @@ Loan demand and default pressure both increase under higher synthetic consumer s
 - Full dataset index: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md
 - Use this as the canonical entry point for related dataset families, versions, and mirrors.
 ## Cross-Platform Mirrors
-- This dataset is also archived with DOI: 10.5281/zenodo.19433242
-- Zenodo record: https://zenodo.org/record/19433242
-- OpenML dataset record: https://www.openml.org/d/47169
+- This dataset is also archived with DOI: 10.5281/zenodo.19433262
+- Zenodo record: https://zenodo.org/record/19433262
+- OpenML dataset record: https://www.openml.org/d/47170
 - Kaggle dataset mirror: https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments

@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-06T00:04:06.928242+00:00`
+Last updated: `2026-04-06T00:07:17.672078+00:00`
 
 ## Dataset Families
 
@@ -21,9 +21,9 @@ Synthetic behavioral segmentation of pawn customer patterns without identifying 
 
 - `2026-04-06` | `consumer_stress_cycle` | rows `7136` | realism `1.0`
   - Summary: Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 7,136 rows under the consumer stress cycle scenario.
-  - Zenodo DOI: 10.5281/zenodo.19433242
-  - Zenodo: https://zenodo.org/record/19433242
-  - Openml: https://www.openml.org/d/47169
+  - Zenodo DOI: 10.5281/zenodo.19433262
+  - Zenodo: https://zenodo.org/record/19433262
+  - Openml: https://www.openml.org/d/47170
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments
   - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-06/README.md
 

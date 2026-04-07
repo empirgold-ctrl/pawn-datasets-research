@@ -1,0 +1,90 @@
+{
+  "dataset_name": "collateral_distribution_and_liquidity",
+  "dataset_version": "2026-04-07",
+  "scenario_name": "seasonal_back_to_school",
+  "row_count": 48,
+  "dataset_summary": "Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.",
+  "key_observations": [
+    "Collateral shares normalize to 100.00% of total inventory, keeping the mix internally consistent.",
+    "Jewelry and many electronics rows retain higher liquidity scores than tools or miscellaneous collateral, which preserves realistic resale asymmetry.",
+    "The seasonal back to school scenario keeps both mid-value and high-value subcategories in the same bundle so analysts can see meaningful spread instead of flat averages."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864",
+      "status": "published",
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    {
+      "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19429678",
+      "doi": "10.5281/zenodo.19429678",
+      "artifact_id": "19429678",
+      "status": "published",
+      "dataset_version": "2026-04-05",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-05T14:28:03.264268+00:00"
+    },
+    {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262",
+      "status": "published",
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    }
+  ],
+  "cross_platform_references": {
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47172",
+      "doi": null,
+      "artifact_id": "47172"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-collateral-liquidity"
+    }
+  },
+  "github_urls": {
+    "master_index": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "family_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/README.md",
+    "version_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md"
+  }
+}

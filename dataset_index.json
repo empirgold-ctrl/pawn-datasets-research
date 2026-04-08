@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-07T00:33:00.508612+00:00",
+  "generated_utc": "2026-04-08T18:38:05.956161+00:00",
   "families": [
     {
       "dataset_name": "collateral_distribution_and_liquidity",
@@ -8,6 +8,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "collateral_distribution_and_liquidity",
           "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
           "dataset_version": "2026-04-07",
           "scenario_name": "seasonal_back_to_school",
@@ -22,21 +23,21 @@
           ],
           "realism_score": 1.0,
           "links": {
-            "zenodo": {
-              "external_url": "https://zenodo.org/record/19446296",
-              "doi": "10.5281/zenodo.19446296"
-            },
-            "openml": {
-              "external_url": "https://www.openml.org/d/47172",
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md",
               "doi": null
             },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
               "doi": null
             },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md",
+            "openml": {
+              "external_url": "https://www.openml.org/d/47172",
               "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19446296",
+              "doi": "10.5281/zenodo.19446296"
             }
           }
         }
@@ -143,6 +144,28 @@
       "versions": [
         {
           "dataset_name": "pawn_loan_activity",
+          "canonical_hash": "f7e2f3fdf8b60f75c1c1bd68d90f6b544db2157857464c3d283198b2eea6f07c",
+          "dataset_version": "refchecker_test_01",
+          "scenario_name": "baseline",
+          "row_count": 12523,
+          "build_timestamp": "2026-04-08T14:31:46.798690+00:00",
+          "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,523 rows under the baseline scenario.",
+          "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+          "key_observations": [
+            "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.59x the median ticket size.",
+            "Repeat customers default at 5.0% versus 6.4% for non-repeat borrowers.",
+            "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+              "doi": null
+            }
+          }
+        },
+        {
+          "dataset_name": "pawn_loan_activity",
           "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
           "dataset_version": "2026-04-04",
           "scenario_name": "baseline",
@@ -176,9 +199,9 @@
           }
         }
       ],
-      "latest_version": "2026-04-04",
+      "latest_version": "refchecker_test_01",
       "latest_scenario": "baseline",
-      "latest_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,344 rows under the baseline scenario."
+      "latest_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,523 rows under the baseline scenario."
     },
     {
       "dataset_name": "regional_pawn_market_conditions",
@@ -186,6 +209,39 @@
       "family_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/README.md",
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
+        {
+          "canonical_hash": "c481559f20f103f9d24e6634d9e9b2e368816b19e1eb01ce49ba417094f8f182",
+          "dataset_version": "2026-04-08",
+          "scenario_name": "holiday_liquidity_spike",
+          "row_count": 252,
+          "build_timestamp": "2026-04-08T18:36:00.548793+00:00",
+          "dataset_summary": "Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 252 rows under the holiday liquidity spike scenario.",
+          "description": "Synthetic macro and regional operating environment indicators for pawn and collateral lending.",
+          "key_observations": [
+            "Consumer stress and default rates move together with a modeled correlation of 0.67.",
+            "Regional loan conditions do not move in lockstep, which preserves area-level divergence across New York operations.",
+            "This build includes 252 monthly regional records under the holiday liquidity spike scenario for longitudinal analysis."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
+              "doi": null
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47173",
+              "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19411057",
+              "doi": "10.5281/zenodo.19411057"
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-08/README.md",
+              "doi": null
+            }
+          }
+        },
         {
           "dataset_name": "regional_pawn_market_conditions",
           "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
@@ -221,7 +277,7 @@
           }
         }
       ],
-      "latest_version": "2026-04-03",
+      "latest_version": "2026-04-08",
       "latest_scenario": "holiday_liquidity_spike",
       "latest_summary": "Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 252 rows under the holiday liquidity spike scenario."
     }

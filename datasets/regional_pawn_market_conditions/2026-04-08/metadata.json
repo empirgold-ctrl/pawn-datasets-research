@@ -1,0 +1,307 @@
+{
+  "dataset_name": "regional_pawn_market_conditions",
+  "dataset_version": "2026-04-08",
+  "scenario_name": "holiday_liquidity_spike",
+  "scenario_signature": "d9d36e5cfb9555d5b3dc5e1041294ef4ea70d7ba9f84dc514b01b903a656a303",
+  "schema_signature": "a628807ed14d6832a5bea9478de89fdd387b59fe07eadd2f5c4f7839d9036f74",
+  "canonical_hash": "c481559f20f103f9d24e6634d9e9b2e368816b19e1eb01ce49ba417094f8f182",
+  "row_count": 252,
+  "build_timestamp": "2026-04-08T18:36:00.548793+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-08_c481559f20f1",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-08_c481559f20f1\\regional_pawn_market_conditions.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-08_c481559f20f1\\regional_pawn_market_conditions.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-08_c481559f20f1\\regional_pawn_market_conditions.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-08_c481559f20f1\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-08_c481559f20f1\\metadata.json",
+  "schema": [
+    {
+      "name": "region",
+      "type": "string"
+    },
+    {
+      "name": "year",
+      "type": "integer"
+    },
+    {
+      "name": "month",
+      "type": "integer"
+    },
+    {
+      "name": "synthetic_unemployment_proxy",
+      "type": "float"
+    },
+    {
+      "name": "synthetic_consumer_stress_index",
+      "type": "float"
+    },
+    {
+      "name": "avg_loan_amount",
+      "type": "float"
+    },
+    {
+      "name": "loan_volume_index",
+      "type": "float"
+    },
+    {
+      "name": "redeem_rate",
+      "type": "float"
+    },
+    {
+      "name": "default_rate",
+      "type": "float"
+    },
+    {
+      "name": "gold_dependency_index",
+      "type": "float"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic macro and regional operating environment indicators for pawn and collateral lending.",
+  "scenario_narrative": "Short-term borrowing activity increases around holiday periods, especially for smaller durations and mixed collateral.",
+  "validation_metrics": {
+    "row_count": 252,
+    "null_counts": {
+      "region": 0,
+      "year": 0,
+      "month": 0,
+      "synthetic_unemployment_proxy": 0,
+      "synthetic_consumer_stress_index": 0,
+      "avg_loan_amount": 0,
+      "loan_volume_index": 0,
+      "redeem_rate": 0,
+      "default_rate": 0,
+      "gold_dependency_index": 0
+    },
+    "stress_default_corr": 0.6724
+  },
+  "realism_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "null_threshold",
+        "passed": true,
+        "detail": "No nulls in required fields"
+      },
+      {
+        "name": "stress_default_correlation",
+        "passed": true,
+        "detail": "corr=0.6724"
+      },
+      {
+        "name": "refchecker_faithfulness",
+        "passed": true,
+        "detail": "Skipped Refchecker validation (refchecker module not available)."
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "dataset_summary": "Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 252 rows under the holiday liquidity spike scenario.",
+  "key_observations": [
+    "Consumer stress and default rates move together with a modeled correlation of 0.67.",
+    "Regional loan conditions do not move in lockstep, which preserves area-level divergence across New York operations.",
+    "This build includes 252 monthly regional records under the holiday liquidity spike scenario for longitudinal analysis."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864",
+      "status": "published",
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    {
+      "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19429678",
+      "doi": "10.5281/zenodo.19429678",
+      "artifact_id": "19429678",
+      "status": "published",
+      "dataset_version": "2026-04-05",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-05T14:28:03.264268+00:00"
+    },
+    {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262",
+      "status": "published",
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    },
+    {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296",
+      "status": "published",
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    }
+  ],
+  "seed": 147300206774648,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "regional_pawn_market_conditions:2026-04-08:holiday_liquidity_spike",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": {
+    "platform": "github_index",
+    "label": "Full dataset index",
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\regional_pawn_market_conditions\\2026-04-08_c481559f20f1\\artifact_manifest.json",
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml"
+  ],
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": null,
+    "github": {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "platform": "github",
+      "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-03/README.md",
+      "doi": null,
+      "artifact_id": "empirgold-ctrl/pawn-datasets-research:datasets/regional_pawn_market_conditions/2026-04-03",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n  \"branch\": \"main\",\n  \"validation_summary\": {\n    \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n    \"branch\": \"main\",\n    \"cross_reference_count\": 3,\n    \"required_artifacts_present\": true\n  },\n  \"master_index_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md\",\n  \"master_index_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n  \"dataset_readme_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-03/README.md\",\n  \"dataset_readme_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/regional_pawn_market_conditions/2026-04-03/README.md\",\n  \"uploaded_files\": [\n    {\n      \"path\": \"README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"dataset_index.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/regional_pawn_market_conditions/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/regional_pawn_market_conditions/2026-04-03/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/regional_pawn_market_conditions/2026-04-03/metadata.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/regional_pawn_market_conditions/2026-04-03/artifact_manifest.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/regional_pawn_market_conditions/2026-04-03/version_record.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"public_checks\": [\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/regional_pawn_market_conditions/2026-04-03/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-03T21:34:44.213255+00:00",
+      "last_attempt_utc": "2026-04-03T21:34:44.213255+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    "kaggle": {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "platform": "kaggle",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-regional-pawn-market-conditions",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"stdout\": \"Starting upload for file artifact_manifest.json\\nUpload successful: artifact_manifest.json (3KB)\\nStarting upload for file metadata.json\\nUpload successful: metadata.json (6KB)\\nStarting upload for file README.md\\nUpload successful: README.md (2KB)\\nStarting upload for file regional_pawn_market_conditions.csv\\nUpload successful: regional_pawn_market_conditions.csv (18KB)\\nStarting upload for file regional_pawn_market_conditions.json\\nUpload successful: regional_pawn_market_conditions.json (82KB)\\nStarting upload for file regional_pawn_market_conditions.parquet\\nUpload successful: regional_pawn_market_conditions.parquet (20KB)\\nYour public Dataset is being created. Please check progress at https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions\",\n  \"stderr\": \"0%|          | 0.00/3.03k [00:00<?, ?B/s]\\n100%|##########| 3.03k/3.03k [00:00<00:00, 10.1kB/s]\\n\\n  0%|          | 0.00/6.20k [00:00<?, ?B/s]\\n100%|##########| 6.20k/6.20k [00:00<00:00, 19.0kB/s]\\n\\n  0%|          | 0.00/1.73k [00:00<?, ?B/s]\\n100%|##########| 1.73k/1.73k [00:00<00:00, 5.82kB/s]\\n\\n  0%|          | 0.00/18.3k [00:00<?, ?B/s]\\n100%|##########| 18.3k/18.3k [00:00<00:00, 63.1kB/s]\\n\\n  0%|          | 0.00/82.4k [00:00<?, ?B/s]\\n100%|##########| 82.4k/82.4k [00:00<00:00, 250kB/s]\\n\\n  0%|          | 0.00/20.3k [00:00<?, ?B/s]\\n100%|##########| 20.3k/20.3k [00:00<00:00, 65.4kB/s]\",\n  \"dataset_exists\": false,\n  \"dataset_id\": \"genefur/kgp-synthetic-regional-pawn-market-conditions\",\n  \"validation_summary\": {\n    \"title_length\": 38,\n    \"subtitle_length\": 65,\n    \"slug\": \"kgp-synthetic-regional-pawn-market-conditions\",\n    \"readme_length\": 1734,\n    \"required_artifacts_present\": true\n  },\n  \"status_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"status_forbidden_fallback\",\n      \"message\": \"403 Client Error: Forbidden for url: https://api.kaggle.com/v1/datasets.DatasetApiService/GetDatasetStatus\"\n    }\n  ],\n  \"public_page_attempts\": [],\n  \"metadata_update_attempts\": [],\n  \"metadata_update_error\": null,\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-03T21:34:44.100117+00:00",
+      "last_attempt_utc": "2026-04-03T21:34:44.100117+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    "mendeley_data": null,
+    "openml": {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "platform": "openml",
+      "external_url": "https://www.openml.org/d/47166",
+      "doi": null,
+      "artifact_id": "47166",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"dataset_id\": \"47166\",\n  \"openml_url\": \"https://www.openml.org/d/47166\",\n  \"target_column\": null,\n  \"row_id_column\": null,\n  \"ignore_columns\": [],\n  \"collection_date\": \"2026-04-03\",\n  \"server\": \"https://www.openml.org/api/v1/xml\",\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-03T21:34:43.913336+00:00",
+      "last_attempt_utc": "2026-04-03T21:34:43.913336+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    "zenodo": {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"create\",\n  \"deposition_id\": 19411057,\n  \"record_id\": 19411057,\n  \"conceptrecid\": \"19411056\",\n  \"validation_summary\": {\n    \"title_length\": 45,\n    \"description_length\": 1574,\n    \"creator_count\": 1,\n    \"keywords_count\": 8,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://zenodo.org/api\"\n  },\n  \"new_version_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"draft_attempts\": [],\n  \"clear_summary\": {\n    \"existing_file_count\": 0,\n    \"deleted_file_ids\": [],\n    \"list_attempts\": [],\n    \"delete_attempts\": []\n  },\n  \"upload_results\": [\n    {\n      \"name\": \"regional_pawn_market_conditions.csv\",\n      \"checksum\": \"md5:199aa38d128ac49e2dbb8be53c727616\",\n      \"size\": 18760\n    },\n    {\n      \"name\": \"regional_pawn_market_conditions.json\",\n      \"checksum\": \"md5:f5a62a6b05af05d35f18125667cd2adf\",\n      \"size\": 84374\n    },\n    {\n      \"name\": \"README.md\",\n      \"checksum\": \"md5:e8070195d0c44a7c71d8122423ab57be\",\n      \"size\": 1710\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"checksum\": \"md5:4a32a4ea9d21e18ceaa1bc293d4dfde2\",\n      \"size\": 6220\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"checksum\": \"md5:398018cdab27288f75be810801fc975b\",\n      \"size\": 2974\n    },\n    {\n      \"name\": \"regional_pawn_market_conditions.parquet\",\n      \"checksum\": \"md5:adb7878d2b047db3a81ef9df9874a909\",\n      \"size\": 20744\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"file\": \"regional_pawn_market_conditions.csv\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"regional_pawn_market_conditions.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"metadata.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"artifact_manifest.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"regional_pawn_market_conditions.parquet\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 202\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"doi\": \"10.5281/zenodo.19411057\"\n}",
+      "first_attempt_utc": "2026-04-03T21:34:43.636992+00:00",
+      "last_attempt_utc": "2026-04-03T21:34:43.636992+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    }
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": false
+  },
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      }
+    ],
+    "canonical_hash": "c481559f20f103f9d24e6634d9e9b2e368816b19e1eb01ce49ba417094f8f182"
+  },
+  "cross_platform_references": {
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-regional-pawn-market-conditions"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47173",
+      "doi": null,
+      "artifact_id": "47173"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057"
+    }
+  }
+}

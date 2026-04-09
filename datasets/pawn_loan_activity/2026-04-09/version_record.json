@@ -1,0 +1,97 @@
+{
+  "dataset_name": "pawn_loan_activity",
+  "dataset_version": "2026-04-09",
+  "scenario_name": "baseline",
+  "row_count": 13675,
+  "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.",
+  "key_observations": [
+    "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.90x the median ticket size.",
+    "Repeat customers default at 4.3% versus 5.3% for non-repeat borrowers.",
+    "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    {
+      "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19429678",
+      "doi": "10.5281/zenodo.19429678",
+      "artifact_id": "19429678",
+      "status": "published",
+      "dataset_version": "2026-04-05",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-05T14:28:03.264268+00:00"
+    },
+    {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262",
+      "status": "published",
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    },
+    {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296",
+      "status": "published",
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    }
+  ],
+  "cross_platform_references": {
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/31968417",
+      "doi": "10.6084/m9.figshare.31968417.v1",
+      "artifact_id": "31968417"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-pawn-loan-activity-open"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47174",
+      "doi": null,
+      "artifact_id": "47174"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864"
+    }
+  },
+  "github_urls": {
+    "master_index": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "family_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/README.md",
+    "version_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-09/README.md"
+  }
+}

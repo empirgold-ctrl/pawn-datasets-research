@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-08T18:38:05.956161+00:00",
+  "generated_utc": "2026-04-09T00:52:09.234490+00:00",
   "families": [
     {
       "dataset_name": "collateral_distribution_and_liquidity",
@@ -143,6 +143,87 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "canonical_hash": "33e603165de696184c18a91597138a11be5932bf47e2fa8d517284eb38d10a7a",
+          "dataset_version": "2026-04-09",
+          "scenario_name": "baseline",
+          "row_count": 13675,
+          "build_timestamp": "2026-04-09T00:49:04.906043+00:00",
+          "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.",
+          "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+          "key_observations": [
+            "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.90x the median ticket size.",
+            "Repeat customers default at 4.3% versus 5.3% for non-repeat borrowers.",
+            "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/31968417",
+              "doi": "10.6084/m9.figshare.31968417.v1"
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+              "doi": null
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47174",
+              "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19411864",
+              "doi": "10.5281/zenodo.19411864"
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-09/README.md",
+              "doi": null
+            }
+          }
+        },
+        {
+          "dataset_name": "pawn_loan_activity",
+          "canonical_hash": "00eab3b19e8ad31b09b0ab5d36e03c475b52aaf54722d1ea5f5f40d8445c4963",
+          "dataset_version": "2026-04-09_test1",
+          "scenario_name": "baseline",
+          "row_count": 13375,
+          "build_timestamp": "2026-04-08T21:54:33.735568+00:00",
+          "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,375 rows under the baseline scenario.",
+          "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+          "key_observations": [
+            "Loan amounts remain heavy-tailed, with the 95th percentile landing about 5.64x the median ticket size.",
+            "Repeat customers default at 4.2% versus 4.9% for non-repeat borrowers.",
+            "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/31968162",
+              "doi": "10.6084/m9.figshare.31968162.v1"
+            }
+          }
+        },
+        {
+          "dataset_name": "pawn_loan_activity",
+          "canonical_hash": "da3feb0a6b1f056ca5610d89db51c4ee31137cb9206c6c5ca02c6f44e0035b48",
+          "dataset_version": "2026-04-08",
+          "scenario_name": "baseline",
+          "row_count": 12544,
+          "build_timestamp": "2026-04-08T21:49:59.297998+00:00",
+          "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,544 rows under the baseline scenario.",
+          "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+          "key_observations": [
+            "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.42x the median ticket size.",
+            "Repeat customers default at 4.0% versus 4.3% for non-repeat borrowers.",
+            "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/31968153",
+              "doi": "10.6084/m9.figshare.31968153.v1"
+            }
+          }
+        },
+        {
           "dataset_name": "pawn_loan_activity",
           "canonical_hash": "f7e2f3fdf8b60f75c1c1bd68d90f6b544db2157857464c3d283198b2eea6f07c",
           "dataset_version": "refchecker_test_01",
@@ -199,9 +280,9 @@
           }
         }
       ],
-      "latest_version": "refchecker_test_01",
+      "latest_version": "2026-04-09",
       "latest_scenario": "baseline",
-      "latest_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 12,523 rows under the baseline scenario."
+      "latest_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario."
     },
     {
       "dataset_name": "regional_pawn_market_conditions",
@@ -210,6 +291,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "regional_pawn_market_conditions",
           "canonical_hash": "c481559f20f103f9d24e6634d9e9b2e368816b19e1eb01ce49ba417094f8f182",
           "dataset_version": "2026-04-08",
           "scenario_name": "holiday_liquidity_spike",
@@ -224,20 +306,16 @@
           ],
           "realism_score": 1.0,
           "links": {
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-08/README.md",
+              "doi": null
+            },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
               "doi": null
             },
             "openml": {
               "external_url": "https://www.openml.org/d/47173",
-              "doi": null
-            },
-            "zenodo": {
-              "external_url": "https://zenodo.org/record/19411057",
-              "doi": "10.5281/zenodo.19411057"
-            },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-08/README.md",
               "doi": null
             }
           }

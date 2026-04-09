@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-09T00:52:09.234490+00:00",
+  "generated_utc": "2026-04-09T00:55:21.998940+00:00",
   "families": [
     {
       "dataset_name": "collateral_distribution_and_liquidity",
@@ -158,15 +158,15 @@
           "realism_score": 1.0,
           "links": {
             "figshare": {
-              "external_url": "https://api.figshare.com/v2/articles/31968417",
-              "doi": "10.6084/m9.figshare.31968417.v1"
+              "external_url": "https://api.figshare.com/v2/articles/31968423",
+              "doi": "10.6084/m9.figshare.31968423.v1"
             },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
               "doi": null
             },
             "openml": {
-              "external_url": "https://www.openml.org/d/47174",
+              "external_url": "https://www.openml.org/d/47175",
               "doi": null
             },
             "zenodo": {

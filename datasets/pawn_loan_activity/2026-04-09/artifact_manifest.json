@@ -21,103 +21,103 @@
     "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
   ],
   "validation_summary": {
-    "realism_score": 1.0,
     "checks": [
       {
+        "detail": "No nulls in required fields",
         "name": "null_threshold",
-        "passed": true,
-        "detail": "No nulls in required fields"
+        "passed": true
       },
       {
+        "detail": "All loan amounts positive",
         "name": "positive_loan_amounts",
-        "passed": true,
-        "detail": "All loan amounts positive"
+        "passed": true
       },
       {
+        "detail": "p95/median=4.90",
         "name": "heavy_tail_distribution",
-        "passed": true,
-        "detail": "p95/median=4.90"
+        "passed": true
       },
       {
+        "detail": "count=0",
         "name": "impossible_combinations",
-        "passed": true,
-        "detail": "count=0"
+        "passed": true
       },
       {
+        "detail": "repeat=0.0432 new=0.0532",
         "name": "repeat_customer_correlation",
-        "passed": true,
-        "detail": "repeat=0.0432 new=0.0532"
+        "passed": true
       },
       {
+        "detail": "min=0.2723 max=0.8121",
         "name": "loan_to_value_bounds",
-        "passed": true,
-        "detail": "min=0.2723 max=0.8121"
+        "passed": true
       },
       {
+        "detail": "Skipped Refchecker validation (refchecker module not available).",
         "name": "refchecker_faithfulness",
-        "passed": true,
-        "detail": "Skipped Refchecker validation (refchecker module not available)."
+        "passed": true
       }
     ],
-    "impossible_combination_count": 0
+    "impossible_combination_count": 0,
+    "realism_score": 1.0
   },
   "related_dataset_references": [
     {
+      "artifact_id": "19411057",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00",
       "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
       "dataset_name": "regional_pawn_market_conditions",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19411057",
-      "doi": "10.5281/zenodo.19411057",
-      "artifact_id": "19411057",
-      "status": "published",
       "dataset_version": "2026-04-03",
+      "doi": "10.5281/zenodo.19411057",
+      "external_url": "https://zenodo.org/record/19411057",
+      "platform": "zenodo",
       "scenario_name": "holiday_liquidity_spike",
-      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+      "status": "published"
     },
     {
+      "artifact_id": "19429678",
+      "build_timestamp": "2026-04-05T14:28:03.264268+00:00",
       "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
       "dataset_name": "gold_price_vs_pawn_activity",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19429678",
-      "doi": "10.5281/zenodo.19429678",
-      "artifact_id": "19429678",
-      "status": "published",
       "dataset_version": "2026-04-05",
+      "doi": "10.5281/zenodo.19429678",
+      "external_url": "https://zenodo.org/record/19429678",
+      "platform": "zenodo",
       "scenario_name": "high_gold_price_cycle",
-      "build_timestamp": "2026-04-05T14:28:03.264268+00:00"
+      "status": "published"
     },
     {
+      "artifact_id": "19433262",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00",
       "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
       "dataset_name": "customer_behavior_segments",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19433262",
-      "doi": "10.5281/zenodo.19433262",
-      "artifact_id": "19433262",
-      "status": "published",
       "dataset_version": "2026-04-06",
+      "doi": "10.5281/zenodo.19433262",
+      "external_url": "https://zenodo.org/record/19433262",
+      "platform": "zenodo",
       "scenario_name": "consumer_stress_cycle",
-      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+      "status": "published"
     },
     {
+      "artifact_id": "19446296",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00",
       "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
       "dataset_name": "collateral_distribution_and_liquidity",
-      "platform": "zenodo",
-      "external_url": "https://zenodo.org/record/19446296",
-      "doi": "10.5281/zenodo.19446296",
-      "artifact_id": "19446296",
-      "status": "published",
       "dataset_version": "2026-04-07",
+      "doi": "10.5281/zenodo.19446296",
+      "external_url": "https://zenodo.org/record/19446296",
+      "platform": "zenodo",
       "scenario_name": "seasonal_back_to_school",
-      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+      "status": "published"
     }
   ],
   "cross_platform_references": {
     "figshare": {
       "platform": "figshare",
       "label": "Figshare dataset mirror",
-      "external_url": "https://api.figshare.com/v2/articles/31968417",
-      "doi": "10.6084/m9.figshare.31968417.v1",
-      "artifact_id": "31968417"
+      "external_url": "https://api.figshare.com/v2/articles/31968423",
+      "doi": "10.6084/m9.figshare.31968423.v1",
+      "artifact_id": "31968423"
     },
     "kaggle": {
       "platform": "kaggle",
@@ -129,9 +129,9 @@
     "openml": {
       "platform": "openml",
       "label": "OpenML dataset record",
-      "external_url": "https://www.openml.org/d/47174",
+      "external_url": "https://www.openml.org/d/47175",
       "doi": null,
-      "artifact_id": "47174"
+      "artifact_id": "47175"
     },
     "zenodo": {
       "platform": "zenodo",
@@ -143,9 +143,9 @@
   },
   "cross_link_verification": {},
   "authority_root_reference": {
-    "platform": "github_index",
-    "label": "Full dataset index",
     "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "label": "Full dataset index",
+    "platform": "github_index",
     "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
   },
   "authority_complete": false,

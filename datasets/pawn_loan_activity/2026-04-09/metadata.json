@@ -1,0 +1,376 @@
+{
+  "dataset_name": "pawn_loan_activity",
+  "dataset_version": "2026-04-09",
+  "scenario_name": "baseline",
+  "scenario_signature": "ac9fdb54b49398e40c5486382a85c4e55ea656e234555249e2f968b4d877d904",
+  "schema_signature": "623ef824fbf7b0031143587f19d1b1c1d35054f8367f77584b31bf413be73b84",
+  "canonical_hash": "33e603165de696184c18a91597138a11be5932bf47e2fa8d517284eb38d10a7a",
+  "row_count": 13675,
+  "build_timestamp": "2026-04-09T00:49:04.906043+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-09_33e603165de6",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-09_33e603165de6\\pawn_loan_activity.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-09_33e603165de6\\pawn_loan_activity.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-09_33e603165de6\\pawn_loan_activity.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-09_33e603165de6\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-09_33e603165de6\\metadata.json",
+  "schema": [
+    {
+      "name": "record_id",
+      "type": "string"
+    },
+    {
+      "name": "year",
+      "type": "integer"
+    },
+    {
+      "name": "month",
+      "type": "integer"
+    },
+    {
+      "name": "store_region",
+      "type": "string"
+    },
+    {
+      "name": "item_category",
+      "type": "string"
+    },
+    {
+      "name": "metal_type",
+      "type": "string"
+    },
+    {
+      "name": "loan_amount",
+      "type": "float"
+    },
+    {
+      "name": "estimated_item_value",
+      "type": "float"
+    },
+    {
+      "name": "loan_to_value_ratio",
+      "type": "float"
+    },
+    {
+      "name": "loan_duration_days",
+      "type": "integer"
+    },
+    {
+      "name": "monthly_interest_rate",
+      "type": "float"
+    },
+    {
+      "name": "customer_segment",
+      "type": "string"
+    },
+    {
+      "name": "repeat_customer_flag",
+      "type": "integer"
+    },
+    {
+      "name": "default_flag",
+      "type": "integer"
+    },
+    {
+      "name": "redeem_flag",
+      "type": "integer"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+  "scenario_narrative": "Baseline operating conditions with steady category mix, realistic outliers, and moderate seasonal movement.",
+  "validation_metrics": {
+    "row_count": 13675,
+    "null_counts": {
+      "record_id": 0,
+      "year": 0,
+      "month": 0,
+      "store_region": 0,
+      "item_category": 0,
+      "metal_type": 0,
+      "loan_amount": 0,
+      "estimated_item_value": 0,
+      "loan_to_value_ratio": 0,
+      "loan_duration_days": 0,
+      "monthly_interest_rate": 0,
+      "customer_segment": 0,
+      "repeat_customer_flag": 0,
+      "default_flag": 0,
+      "redeem_flag": 0
+    },
+    "loan_amount_p95_to_median": 4.900682420619255,
+    "repeat_default_rate": 0.0432,
+    "new_default_rate": 0.0532
+  },
+  "realism_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "null_threshold",
+        "passed": true,
+        "detail": "No nulls in required fields"
+      },
+      {
+        "name": "positive_loan_amounts",
+        "passed": true,
+        "detail": "All loan amounts positive"
+      },
+      {
+        "name": "heavy_tail_distribution",
+        "passed": true,
+        "detail": "p95/median=4.90"
+      },
+      {
+        "name": "impossible_combinations",
+        "passed": true,
+        "detail": "count=0"
+      },
+      {
+        "name": "repeat_customer_correlation",
+        "passed": true,
+        "detail": "repeat=0.0432 new=0.0532"
+      },
+      {
+        "name": "loan_to_value_bounds",
+        "passed": true,
+        "detail": "min=0.2723 max=0.8121"
+      },
+      {
+        "name": "refchecker_faithfulness",
+        "passed": true,
+        "detail": "Skipped Refchecker validation (refchecker module not available)."
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.",
+  "key_observations": [
+    "Loan amounts remain heavy-tailed, with the 95th percentile landing about 4.90x the median ticket size.",
+    "Repeat customers default at 4.3% versus 5.3% for non-repeat borrowers.",
+    "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    {
+      "canonical_hash": "3a2c5110046b1adfe91bed462790a7ff2d95040e230b944263814af29f3e06d5",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19429678",
+      "doi": "10.5281/zenodo.19429678",
+      "artifact_id": "19429678",
+      "status": "published",
+      "dataset_version": "2026-04-05",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-05T14:28:03.264268+00:00"
+    },
+    {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262",
+      "status": "published",
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    },
+    {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296",
+      "status": "published",
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    }
+  ],
+  "seed": 19808337582972,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "pawn_loan_activity:2026-04-09:baseline",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": {
+    "platform": "github_index",
+    "label": "Full dataset index",
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\pawn_loan_activity\\2026-04-09_33e603165de6\\artifact_manifest.json",
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml"
+  ],
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": {
+      "canonical_hash": "00eab3b19e8ad31b09b0ab5d36e03c475b52aaf54722d1ea5f5f40d8445c4963",
+      "platform": "figshare",
+      "external_url": "https://api.figshare.com/v2/articles/31968162",
+      "doi": "10.6084/m9.figshare.31968162.v1",
+      "artifact_id": "31968162",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"create\",\n  \"article_id\": \"31968162\",\n  \"validation_summary\": {\n    \"title_length\": 51,\n    \"description_length\": 1437,\n    \"tags_count\": 7,\n    \"references_count\": 4,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://api.figshare.com/v2\"\n  },\n  \"create_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"article_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"clear_summary\": {\n    \"existing_file_count\": 0,\n    \"deleted_file_ids\": [],\n    \"list_attempts\": [\n      {\n        \"attempt\": 1,\n        \"outcome\": \"success\",\n        \"status_code\": 200\n      }\n    ],\n    \"delete_attempts\": []\n  },\n  \"upload_summaries\": [\n    {\n      \"name\": \"pawn_loan_activity.csv\",\n      \"file_id\": \"63570216\",\n      \"size\": 1323057,\n      \"md5\": \"9f0bd6b05d7ed42a6c84345521474907\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 1323056,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"pawn_loan_activity.json\",\n      \"file_id\": \"63570219\",\n      \"size\": 6271593,\n      \"md5\": \"bfa49acb24b0e9c610604e929cc0ed83\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 6271592,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"README.md\",\n      \"file_id\": \"63570222\",\n      \"size\": 3241,\n      \"md5\": \"c0d4cfb9f3ee0de2bd774612848ed270\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 3240,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"file_id\": \"63570225\",\n      \"size\": 29826,\n      \"md5\": \"3242ddd10f285cdac3cdd910d6ad4655\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 29825,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"file_id\": \"63570228\",\n      \"size\": 7908,\n      \"md5\": \"34b4f8f12eca8d78d3be058bf3e2ba44\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 7907,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"pawn_loan_activity.parquet\",\n      \"file_id\": \"63570231\",\n      \"size\": 545728,\n      \"md5\": \"1494f64374b8db0e04dc2dbf1961a6d6\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 545727,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 205\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"public_lookup_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"draft_payload\": {\n    \"id\": 31968162,\n    \"version\": 0\n  },\n  \"doi\": \"10.6084/m9.figshare.31968162.v1\"\n}",
+      "first_attempt_utc": "2026-04-08T21:54:59.742140+00:00",
+      "last_attempt_utc": "2026-04-08T21:56:56.273577+00:00",
+      "attempt_count": 2,
+      "dataset_version": "2026-04-09_test1",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-08T21:54:33.735568+00:00"
+    },
+    "github": {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "platform": "github",
+      "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-04/README.md",
+      "doi": null,
+      "artifact_id": "empirgold-ctrl/pawn-datasets-research:datasets/pawn_loan_activity/2026-04-04",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n  \"branch\": \"main\",\n  \"validation_summary\": {\n    \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n    \"branch\": \"main\",\n    \"cross_reference_count\": 3,\n    \"required_artifacts_present\": true\n  },\n  \"master_index_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md\",\n  \"master_index_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n  \"dataset_readme_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-04/README.md\",\n  \"dataset_readme_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/pawn_loan_activity/2026-04-04/README.md\",\n  \"uploaded_files\": [\n    {\n      \"path\": \"README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"dataset_index.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/pawn_loan_activity/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/pawn_loan_activity/2026-04-04/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/pawn_loan_activity/2026-04-04/metadata.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/pawn_loan_activity/2026-04-04/artifact_manifest.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/pawn_loan_activity/2026-04-04/version_record.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"public_checks\": [\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/pawn_loan_activity/2026-04-04/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-04T00:41:10.849997+00:00",
+      "last_attempt_utc": "2026-04-04T00:41:10.849997+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    "kaggle": {
+      "canonical_hash": "f7e2f3fdf8b60f75c1c1bd68d90f6b544db2157857464c3d283198b2eea6f07c",
+      "platform": "kaggle",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-pawn-loan-activity-open",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"stdout\": \"Starting upload for file artifact_manifest.json\\nUpload successful: artifact_manifest.json (6KB)\\nStarting upload for file metadata.json\\nUpload successful: metadata.json (19KB)\\nStarting upload for file pawn_loan_activity.csv\\nUpload successful: pawn_loan_activity.csv (1MB)\\nStarting upload for file pawn_loan_activity.json\\nUpload successful: pawn_loan_activity.json (6MB)\\nStarting upload for file pawn_loan_activity.parquet\\nUpload successful: pawn_loan_activity.parquet (504KB)\\nStarting upload for file README.md\\nUpload successful: README.md (3KB)\\nDataset version is being created. Please check progress at https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open\",\n  \"stderr\": \"0%|          | 0.00/5.76k [00:00<?, ?B/s]\\n100%|##########| 5.76k/5.76k [00:00<00:00, 18.4kB/s]\\n\\n  0%|          | 0.00/19.1k [00:00<?, ?B/s]\\n100%|##########| 19.1k/19.1k [00:00<00:00, 60.2kB/s]\\n\\n  0%|          | 0.00/1.19M [00:00<?, ?B/s]\\n 17%|#7        | 208k/1.19M [00:00<00:00, 1.95MB/s]\\n 38%|###8      | 464k/1.19M [00:00<00:00, 2.25MB/s]\\n 57%|#####6    | 688k/1.19M [00:00<00:00, 1.59MB/s]\\n 88%|########8 | 1.05M/1.19M [00:00<00:00, 2.24MB/s]\\n100%|##########| 1.19M/1.19M [00:01<00:00, 897kB/s] \\n\\n  0%|          | 0.00/5.61M [00:00<?, ?B/s]\\n  4%|3         | 208k/5.61M [00:00<00:02, 2.04MB/s]\\n  8%|8         | 464k/5.61M [00:00<00:02, 2.21MB/s]\\n 12%|#1        | 688k/5.61M [00:00<00:03, 1.61MB/s]\\n 15%|#5        | 864k/5.61M [00:00<00:03, 1.42MB/s]\\n 18%|#7        | 1.00M/5.61M [00:00<00:03, 1.34MB/s]\\n 20%|##        | 1.14M/5.61M [00:00<00:03, 1.28MB/s]\\n 23%|##2       | 1.27M/5.61M [00:00<00:03, 1.25MB/s]\\n 25%|##4       | 1.39M/5.61M [00:01<00:03, 1.24MB/s]\\n 27%|##7       | 1.52M/5.61M [00:01<00:03, 1.22MB/s]\\n 29%|##9       | 1.64M/5.61M [00:01<00:03, 1.15MB/s]\\n 32%|###1      | 1.77M/5.61M [00:01<00:03, 1.10MB/s]\\n 34%|###3      | 1.89M/5.61M [00:01<00:03, 1.12MB/s]\\n 36%|###5      | 2.02M/5.61M [00:01<00:03, 1.13MB/s]\\n 38%|###8      | 2.14M/5.61M [00:01<00:03, 1.16MB/s]\\n 40%|####      | 2.27M/5.61M [00:01<00:03, 1.10MB/s]\\n 42%|####2     | 2.38M/5.61M [00:02<00:03, 1.07MB/s]\\n 44%|####4     | 2.48M/5.61M [00:02<00:02, 1.09MB/s]\\n 47%|####6     | 2.61M/5.61M [00:02<00:02, 1.12MB/s]\\n 49%|####8     | 2.73M/5.61M [00:02<00:02, 1.14MB/s]\\n 51%|#####1    | 2.86M/5.61M [00:02<00:02, 1.15MB/s]\\n 53%|#####3    | 2.98M/5.61M [00:02<00:02, 1.15MB/s]\\n 55%|#####5    | 3.11M/5.61M [00:02<00:02, 1.16MB/s]\\n 58%|#####7    | 3.23M/5.61M [00:02<00:02, 1.17MB/s]\\n 60%|#####9    | 3.36M/5.61M [00:02<00:02, 1.18MB/s]\\n 62%|######2   | 3.48M/5.61M [00:02<00:01, 1.18MB/s]\\n 64%|######4   | 3.61M/5.61M [00:03<00:01, 1.18MB/s]\\n 67%|######6   | 3.73M/5.61M [00:03<00:01, 1.17MB/s]\\n 69%|######8   | 3.86M/5.61M [00:03<00:01, 1.18MB/s]\\n 71%|#######1  | 3.98M/5.61M [00:03<00:01, 1.18MB/s]\\n 73%|#######3  | 4.11M/5.61M [00:03<00:01, 1.17MB/s]\\n 76%|#######5  | 4.23M/5.61M [00:03<00:01, 1.18MB/s]\\n 78%|#######7  | 4.36M/5.61M [00:03<00:01, 1.17MB/s]\\n 80%|########  | 4.48M/5.61M [00:03<00:01, 1.17MB/s]\\n 82%|########2 | 4.61M/5.61M [00:04<00:00, 1.12MB/s]\\n 84%|########4 | 4.73M/5.61M [00:04<00:00, 1.13MB/s]\\n 86%|########6 | 4.84M/5.61M [00:04<00:00, 1.09MB/s]\\n 89%|########8 | 4.97M/5.61M [00:04<00:00, 1.11MB/s]\\n 91%|######### | 5.09M/5.61M [00:04<00:00, 1.13MB/s]\\n 93%|#########3| 5.22M/5.61M [00:04<00:00, 1.14MB/s]\\n 95%|#########5| 5.34M/5.61M [00:04<00:00, 1.17MB/s]\\n 98%|#########7| 5.47M/5.61M [00:04<00:00, 1.16MB/s]\\n100%|#########9| 5.59M/5.61M [00:04<00:00, 1.16MB/s]\\n100%|##########| 5.61M/5.61M [00:05<00:00, 1.09MB/s]\\n\\n  0%|          | 0.00/504k [00:00<?, ?B/s]\\n 41%|####1     | 208k/504k [00:00<00:00, 2.02MB/s]\\n 92%|#########2| 464k/504k [00:00<00:00, 2.24MB/s]\\n100%|##########| 504k/504k [00:00<00:00, 721kB/s] \\n\\n  0%|          | 0.00/3.06k [00:00<?, ?B/s]\\n100%|##########| 3.06k/3.06k [00:00<00:00, 9.97kB/s]\",\n  \"dataset_exists\": true,\n  \"dataset_id\": \"genefur/kgp-synthetic-pawn-loan-activity-open\",\n  \"validation_summary\": {\n    \"title_length\": 32,\n    \"subtitle_length\": 58,\n    \"slug\": \"kgp-synthetic-pawn-loan-activity-open\",\n    \"readme_length\": 3078,\n    \"required_artifacts_present\": true\n  },\n  \"status_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ],\n  \"public_page_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"metadata_update_attempts\": [],\n  \"metadata_update_error\": null,\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-08T14:32:36.305464+00:00",
+      "last_attempt_utc": "2026-04-08T14:32:36.305464+00:00",
+      "attempt_count": 1,
+      "dataset_version": "refchecker_test_01",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-08T14:31:46.798690+00:00"
+    },
+    "mendeley_data": null,
+    "openml": {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "platform": "openml",
+      "external_url": "https://www.openml.org/d/47167",
+      "doi": null,
+      "artifact_id": "47167",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"dataset_id\": \"47167\",\n  \"openml_url\": \"https://www.openml.org/d/47167\",\n  \"target_column\": null,\n  \"row_id_column\": \"record_id\",\n  \"ignore_columns\": [],\n  \"collection_date\": \"2026-04-04\",\n  \"server\": \"https://www.openml.org/api/v1/xml\",\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-04T00:41:10.832348+00:00",
+      "last_attempt_utc": "2026-04-04T00:41:10.832348+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    "zenodo": {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"create\",\n  \"deposition_id\": 19411864,\n  \"record_id\": 19411864,\n  \"conceptrecid\": \"19411863\",\n  \"validation_summary\": {\n    \"title_length\": 32,\n    \"description_length\": 2187,\n    \"creator_count\": 1,\n    \"keywords_count\": 8,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://zenodo.org/api\"\n  },\n  \"new_version_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"draft_attempts\": [],\n  \"clear_summary\": {\n    \"existing_file_count\": 0,\n    \"deleted_file_ids\": [],\n    \"list_attempts\": [],\n    \"delete_attempts\": []\n  },\n  \"upload_results\": [\n    {\n      \"name\": \"pawn_loan_activity.csv\",\n      \"checksum\": \"md5:9bcf87d0274402d075b465115ca800f3\",\n      \"size\": 1219352\n    },\n    {\n      \"name\": \"pawn_loan_activity.json\",\n      \"checksum\": \"md5:94d908a72c97d8d8ef8df142171b1c51\",\n      \"size\": 5786418\n    },\n    {\n      \"name\": \"README.md\",\n      \"checksum\": \"md5:abb8b7f4a9e382b1ce0b59b67154fb56\",\n      \"size\": 2121\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"checksum\": \"md5:56a798becd674b970c1cfd0b05de1b52\",\n      \"size\": 8177\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"checksum\": \"md5:cbc342d633f544486483137afdb8784a\",\n      \"size\": 4418\n    },\n    {\n      \"name\": \"pawn_loan_activity.parquet\",\n      \"checksum\": \"md5:e5bc8286b090aef6e49a46f04a5ee76d\",\n      \"size\": 492077\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"file\": \"pawn_loan_activity.csv\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"pawn_loan_activity.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"metadata.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"artifact_manifest.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"pawn_loan_activity.parquet\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 202\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"doi\": \"10.5281/zenodo.19411864\"\n}",
+      "first_attempt_utc": "2026-04-04T00:41:10.815323+00:00",
+      "last_attempt_utc": "2026-04-04T00:41:10.815323+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    }
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": true
+  },
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      }
+    ],
+    "canonical_hash": "33e603165de696184c18a91597138a11be5932bf47e2fa8d517284eb38d10a7a"
+  },
+  "cross_platform_references": {
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/31968417",
+      "doi": "10.6084/m9.figshare.31968417.v1",
+      "artifact_id": "31968417"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-pawn-loan-activity-open"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47174",
+      "doi": null,
+      "artifact_id": "47174"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864"
+    }
+  }
+}

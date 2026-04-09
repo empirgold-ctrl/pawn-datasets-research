@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-09T00:52:09.234490+00:00`
+Last updated: `2026-04-09T00:55:21.998940+00:00`
 
 ## Dataset Families
 
@@ -80,8 +80,8 @@ Synthetic dataset modeling pawn loan activity by category, amount, duration, and
   - Summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.
   - Zenodo DOI: 10.5281/zenodo.19411864
   - Zenodo: https://zenodo.org/record/19411864
-  - Figshare: https://api.figshare.com/v2/articles/31968417
-  - Openml: https://www.openml.org/d/47174
+  - Figshare: https://api.figshare.com/v2/articles/31968423
+  - Openml: https://www.openml.org/d/47175
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open
   - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-09/README.md
 - `2026-04-09_test1` | `baseline` | rows `13375` | realism `1.0`

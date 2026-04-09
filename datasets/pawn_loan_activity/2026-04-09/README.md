@@ -56,6 +56,6 @@ Methodological context, scenario baseline constraints, and regional market groun
 ## Cross-Platform Mirrors
 - This dataset is also archived with DOI: 10.5281/zenodo.19411864
 - Zenodo record: https://zenodo.org/record/19411864
-- Figshare dataset mirror: https://api.figshare.com/v2/articles/31968417
-- OpenML dataset record: https://www.openml.org/d/47174
+- Figshare dataset mirror: https://api.figshare.com/v2/articles/31968423
+- OpenML dataset record: https://www.openml.org/d/47175
 - Kaggle dataset mirror: https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open

@@ -1,0 +1,97 @@
+{
+  "dataset_name": "gold_price_vs_pawn_activity",
+  "dataset_version": "2026-04-10",
+  "scenario_name": "high_gold_price_cycle",
+  "row_count": 731,
+  "dataset_summary": "Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 731 rows under the high gold price cycle scenario.",
+  "key_observations": [
+    "Gold prices keep a directional time-series trend instead of flat noise, with a time correlation of 0.97.",
+    "Average jewelry loan amounts move with gold prices, with a modeled correlation of 0.90.",
+    "This build contributes 731 daily observations so macro shifts can be studied without losing regional variation."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864",
+      "status": "published",
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262",
+      "status": "published",
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    },
+    {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296",
+      "status": "published",
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    }
+  ],
+  "cross_platform_references": {
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-gold-price-vs-pawn-activity"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47179",
+      "doi": null,
+      "artifact_id": "47179"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19502492",
+      "doi": "10.5281/zenodo.19502492",
+      "artifact_id": "19502492"
+    },
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/31985433",
+      "doi": "10.6084/m9.figshare.31985433.v1",
+      "artifact_id": "31985433"
+    }
+  },
+  "github_urls": {
+    "master_index": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "family_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/README.md",
+    "version_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-10/README.md"
+  }
+}

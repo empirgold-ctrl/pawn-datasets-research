@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-09T00:55:21.998940+00:00`
+Last updated: `2026-04-10T21:33:32.452664+00:00`
 
 ## Dataset Families
 
@@ -50,13 +50,21 @@ Synthetic behavioral segmentation of pawn customer patterns without identifying 
 
 Synthetic time-series linking gold price movements to pawn loan volume and average ticket size.
 
-- Latest version: `2026-04-05`
+- Latest version: `2026-04-10`
 - Latest scenario: `high_gold_price_cycle`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/README.md
-- Latest summary: Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 833 rows under the high gold price cycle scenario.
+- Latest summary: Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 731 rows under the high gold price cycle scenario.
 
 #### Version History
 
+- `2026-04-10` | `high_gold_price_cycle` | rows `731` | realism `1.0`
+  - Summary: Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 731 rows under the high gold price cycle scenario.
+  - Zenodo DOI: 10.5281/zenodo.19502492
+  - Zenodo: https://zenodo.org/record/19502492
+  - Figshare: https://api.figshare.com/v2/articles/31985433
+  - Openml: https://www.openml.org/d/47179
+  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity
+  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-10/README.md
 - `2026-04-05` | `high_gold_price_cycle` | rows `833` | realism `1.0`
   - Summary: Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 833 rows under the high gold price cycle scenario.
   - Zenodo DOI: 10.5281/zenodo.19429678
@@ -78,8 +86,6 @@ Synthetic dataset modeling pawn loan activity by category, amount, duration, and
 
 - `2026-04-09` | `baseline` | rows `13675` | realism `1.0`
   - Summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.
-  - Zenodo DOI: 10.5281/zenodo.19411864
-  - Zenodo: https://zenodo.org/record/19411864
   - Figshare: https://api.figshare.com/v2/articles/31968423
   - Openml: https://www.openml.org/d/47175
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open

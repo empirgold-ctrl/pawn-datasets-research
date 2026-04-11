@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-10T21:33:32.452664+00:00`
+Last updated: `2026-04-11T00:16:11.921286+00:00`
 
 ## Dataset Families
 
@@ -31,13 +31,21 @@ Synthetic category-level view of collateral mix, value bands, and liquidity char
 
 Synthetic behavioral segmentation of pawn customer patterns without identifying real individuals.
 
-- Latest version: `2026-04-06`
+- Latest version: `2026-04-11`
 - Latest scenario: `consumer_stress_cycle`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/README.md
-- Latest summary: Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 7,136 rows under the consumer stress cycle scenario.
+- Latest summary: Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 6,643 rows under the consumer stress cycle scenario.
 
 #### Version History
 
+- `2026-04-11` | `consumer_stress_cycle` | rows `6643` | realism `1.0`
+  - Summary: Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 6,643 rows under the consumer stress cycle scenario.
+  - Zenodo DOI: 10.5281/zenodo.19503329
+  - Zenodo: https://zenodo.org/record/19503329
+  - Figshare: https://api.figshare.com/v2/articles/31985595
+  - Openml: https://www.openml.org/d/47180
+  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments
+  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-11/README.md
 - `2026-04-06` | `consumer_stress_cycle` | rows `7136` | realism `1.0`
   - Summary: Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 7,136 rows under the consumer stress cycle scenario.
   - Zenodo DOI: 10.5281/zenodo.19433262
@@ -65,6 +73,7 @@ Synthetic time-series linking gold price movements to pawn loan volume and avera
   - Openml: https://www.openml.org/d/47179
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity
   - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-10/README.md
+  - Huggingface: https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity
 - `2026-04-05` | `high_gold_price_cycle` | rows `833` | realism `1.0`
   - Summary: Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 833 rows under the high gold price cycle scenario.
   - Zenodo DOI: 10.5281/zenodo.19429678

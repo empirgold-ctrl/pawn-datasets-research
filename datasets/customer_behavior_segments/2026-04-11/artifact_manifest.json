@@ -1,0 +1,149 @@
+{
+  "dataset_name": "customer_behavior_segments",
+  "dataset_version": "2026-04-11",
+  "scenario_name": "consumer_stress_cycle",
+  "version_key": "customer_behavior_segments:2026-04-11:consumer_stress_cycle",
+  "seed": 218838881376686,
+  "row_count": 6643,
+  "schema_signature": "bc656945b9098eba358355d87310eb74f042db63c884fac94bdd05b68188caf5",
+  "canonical_hash": "dd9d1bff6f25989383ad4a140188d127fc803bdda057a496c112d42e2afb0b93",
+  "file_paths": {
+    "csv": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\customer_behavior_segments.csv",
+    "json": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\customer_behavior_segments.json",
+    "parquet": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\customer_behavior_segments.parquet",
+    "readme": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\README.md",
+    "metadata": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\metadata.json"
+  },
+  "dataset_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 6,643 rows under the consumer stress cycle scenario.",
+  "key_observations": [
+    "Average annual visit frequency is 4.33, supporting repeat-use behavior instead of one-off random records.",
+    "Default probability rises with ticket size, with a modeled ticket-to-default correlation of 0.49.",
+    "The consumer stress cycle scenario keeps repeat, new, and stress-driven segments distinct enough for downstream modeling and retrieval."
+  ],
+  "validation_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "null_threshold",
+        "passed": true,
+        "detail": "No nulls in required fields"
+      },
+      {
+        "name": "visit_frequency_distribution",
+        "passed": true,
+        "detail": "mean=4.3288"
+      },
+      {
+        "name": "ticket_default_correlation",
+        "passed": true,
+        "detail": "corr=0.4931"
+      },
+      {
+        "name": "refchecker_faithfulness",
+        "passed": true,
+        "detail": "Skipped Refchecker validation (refchecker module not available)."
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864",
+      "status": "published",
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296",
+      "status": "published",
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    },
+    {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19502492",
+      "doi": "10.5281/zenodo.19502492",
+      "artifact_id": "19502492",
+      "status": "published",
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    }
+  ],
+  "cross_platform_references": {
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-customer-behavior-segments"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47180",
+      "doi": null,
+      "artifact_id": "47180"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19503329",
+      "doi": "10.5281/zenodo.19503329",
+      "artifact_id": "19503329"
+    },
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/31985595",
+      "doi": "10.6084/m9.figshare.31985595.v1",
+      "artifact_id": "31985595"
+    }
+  },
+  "cross_link_verification": {},
+  "authority_root_reference": {
+    "platform": "github_index",
+    "label": "Full dataset index",
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "authority_complete": false,
+  "authority_summary": {},
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml",
+    "huggingface"
+  ],
+  "publication_results": [],
+  "build_state": "validated",
+  "publication_state": "publishing"
+}

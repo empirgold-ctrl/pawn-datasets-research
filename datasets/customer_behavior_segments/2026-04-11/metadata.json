@@ -1,0 +1,323 @@
+{
+  "dataset_name": "customer_behavior_segments",
+  "dataset_version": "2026-04-11",
+  "scenario_name": "consumer_stress_cycle",
+  "scenario_signature": "d1adde40ecbd9056ea8cab23e8fff04319635146419baf8013b43936280e5dbc",
+  "schema_signature": "bc656945b9098eba358355d87310eb74f042db63c884fac94bdd05b68188caf5",
+  "canonical_hash": "dd9d1bff6f25989383ad4a140188d127fc803bdda057a496c112d42e2afb0b93",
+  "row_count": 6643,
+  "build_timestamp": "2026-04-11T00:14:25.846479+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\customer_behavior_segments.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\customer_behavior_segments.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\customer_behavior_segments.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\metadata.json",
+  "schema": [
+    {
+      "name": "synthetic_customer_id",
+      "type": "string"
+    },
+    {
+      "name": "region",
+      "type": "string"
+    },
+    {
+      "name": "segment_type",
+      "type": "string"
+    },
+    {
+      "name": "annual_visit_frequency",
+      "type": "float"
+    },
+    {
+      "name": "avg_ticket_size",
+      "type": "float"
+    },
+    {
+      "name": "preferred_collateral_type",
+      "type": "string"
+    },
+    {
+      "name": "repeat_rate",
+      "type": "float"
+    },
+    {
+      "name": "estimated_default_probability",
+      "type": "float"
+    },
+    {
+      "name": "seasonality_bias",
+      "type": "string"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic behavioral segmentation of pawn customer patterns without identifying real individuals.",
+  "scenario_narrative": "Loan demand and default pressure both increase under higher synthetic consumer stress, while redeem rates compress modestly.",
+  "validation_metrics": {
+    "row_count": 6643,
+    "null_counts": {
+      "synthetic_customer_id": 0,
+      "region": 0,
+      "segment_type": 0,
+      "annual_visit_frequency": 0,
+      "avg_ticket_size": 0,
+      "preferred_collateral_type": 0,
+      "repeat_rate": 0,
+      "estimated_default_probability": 0,
+      "seasonality_bias": 0
+    },
+    "visit_frequency_mean": 4.3288,
+    "avg_ticket_default_corr": 0.4931
+  },
+  "realism_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "null_threshold",
+        "passed": true,
+        "detail": "No nulls in required fields"
+      },
+      {
+        "name": "visit_frequency_distribution",
+        "passed": true,
+        "detail": "mean=4.3288"
+      },
+      {
+        "name": "ticket_default_correlation",
+        "passed": true,
+        "detail": "corr=0.4931"
+      },
+      {
+        "name": "refchecker_faithfulness",
+        "passed": true,
+        "detail": "Skipped Refchecker validation (refchecker module not available)."
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "dataset_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 6,643 rows under the consumer stress cycle scenario.",
+  "key_observations": [
+    "Average annual visit frequency is 4.33, supporting repeat-use behavior instead of one-off random records.",
+    "Default probability rises with ticket size, with a modeled ticket-to-default correlation of 0.49.",
+    "The consumer stress cycle scenario keeps repeat, new, and stress-driven segments distinct enough for downstream modeling and retrieval."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864",
+      "status": "published",
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296",
+      "status": "published",
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    },
+    {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19502492",
+      "doi": "10.5281/zenodo.19502492",
+      "artifact_id": "19502492",
+      "status": "published",
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    }
+  ],
+  "seed": 218838881376686,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "customer_behavior_segments:2026-04-11:consumer_stress_cycle",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": {
+    "platform": "github_index",
+    "label": "Full dataset index",
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\customer_behavior_segments\\2026-04-11_dd9d1bff6f25\\artifact_manifest.json",
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml",
+    "huggingface"
+  ],
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": null,
+    "github": {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "platform": "github",
+      "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-06/README.md",
+      "doi": null,
+      "artifact_id": "empirgold-ctrl/pawn-datasets-research:datasets/customer_behavior_segments/2026-04-06",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n  \"branch\": \"main\",\n  \"validation_summary\": {\n    \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n    \"branch\": \"main\",\n    \"cross_reference_count\": 3,\n    \"required_artifacts_present\": true\n  },\n  \"master_index_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md\",\n  \"master_index_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n  \"dataset_readme_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-06/README.md\",\n  \"dataset_readme_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/customer_behavior_segments/2026-04-06/README.md\",\n  \"uploaded_files\": [\n    {\n      \"path\": \"README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"dataset_index.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/customer_behavior_segments/README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/customer_behavior_segments/2026-04-06/README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/customer_behavior_segments/2026-04-06/metadata.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/customer_behavior_segments/2026-04-06/artifact_manifest.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/customer_behavior_segments/2026-04-06/version_record.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    }\n  ],\n  \"public_checks\": [\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/customer_behavior_segments/2026-04-06/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-06T00:08:37.111591+00:00",
+      "last_attempt_utc": "2026-04-06T00:08:37.111591+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    },
+    "huggingface": null,
+    "kaggle": {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "platform": "kaggle",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-customer-behavior-segments",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"stdout\": \"Starting upload for file artifact_manifest.json\\nUpload successful: artifact_manifest.json (5KB)\\nStarting upload for file customer_behavior_segments.csv\\nUpload successful: customer_behavior_segments.csv (631KB)\\nStarting upload for file customer_behavior_segments.json\\nUpload successful: customer_behavior_segments.json (2MB)\\nStarting upload for file customer_behavior_segments.parquet\\nUpload successful: customer_behavior_segments.parquet (266KB)\\nStarting upload for file metadata.json\\nUpload successful: metadata.json (8KB)\\nStarting upload for file README.md\\nUpload successful: README.md (2KB)\\nDataset version is being created. Please check progress at https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments\",\n  \"stderr\": \"0%|          | 0.00/5.24k [00:00<?, ?B/s]\\n100%|##########| 5.24k/5.24k [00:00<00:00, 16.7kB/s]\\n\\n  0%|          | 0.00/631k [00:00<?, ?B/s]\\n 33%|###2      | 208k/631k [00:00<00:00, 2.03MB/s]\\n 74%|#######3  | 464k/631k [00:00<00:00, 2.25MB/s]\\n100%|##########| 631k/631k [00:00<00:00, 750kB/s] \\n\\n  0%|          | 0.00/2.43M [00:00<?, ?B/s]\\n  6%|5         | 144k/2.43M [00:00<00:01, 1.45MB/s]\\n 18%|#8        | 448k/2.43M [00:00<00:00, 2.24MB/s]\\n 27%|##7       | 672k/2.43M [00:00<00:01, 1.57MB/s]\\n 34%|###4      | 848k/2.43M [00:00<00:01, 1.41MB/s]\\n 41%|####      | 0.98M/2.43M [00:00<00:01, 1.34MB/s]\\n 46%|####6     | 1.12M/2.43M [00:00<00:01, 1.28MB/s]\\n 52%|#####2    | 1.27M/2.43M [00:00<00:00, 1.25MB/s]\\n 57%|#####7    | 1.39M/2.43M [00:01<00:00, 1.22MB/s]\\n 62%|######2   | 1.52M/2.43M [00:01<00:00, 1.21MB/s]\\n 68%|######7   | 1.64M/2.43M [00:01<00:00, 1.19MB/s]\\n 73%|#######2  | 1.77M/2.43M [00:01<00:00, 1.19MB/s]\\n 78%|#######7  | 1.89M/2.43M [00:01<00:00, 980kB/s] \\n 83%|########3 | 2.02M/2.43M [00:01<00:00, 1.03MB/s]\\n 88%|########8 | 2.14M/2.43M [00:01<00:00, 1.07MB/s]\\n 93%|#########2| 2.25M/2.43M [00:01<00:00, 1.08MB/s]\\n 98%|#########7| 2.38M/2.43M [00:02<00:00, 1.11MB/s]\\n100%|##########| 2.43M/2.43M [00:02<00:00, 996kB/s] \\n\\n  0%|          | 0.00/266k [00:00<?, ?B/s]\\n 78%|#######8  | 208k/266k [00:00<00:00, 2.05MB/s]\\n100%|##########| 266k/266k [00:00<00:00, 538kB/s] \\n\\n  0%|          | 0.00/8.39k [00:00<?, ?B/s]\\n100%|##########| 8.39k/8.39k [00:00<00:00, 26.5kB/s]\\n\\n  0%|          | 0.00/2.49k [00:00<?, ?B/s]\\n100%|##########| 2.49k/2.49k [00:00<00:00, 7.88kB/s]\",\n  \"dataset_exists\": true,\n  \"dataset_id\": \"genefur/kgp-synthetic-customer-behavior-segments\",\n  \"validation_summary\": {\n    \"title_length\": 31,\n    \"subtitle_length\": 63,\n    \"slug\": \"kgp-synthetic-customer-behavior-segments\",\n    \"readme_length\": 2499,\n    \"required_artifacts_present\": true\n  },\n  \"status_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ],\n  \"public_page_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"metadata_update_attempts\": [],\n  \"metadata_update_error\": null,\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-06T00:08:37.100483+00:00",
+      "last_attempt_utc": "2026-04-06T00:08:37.100483+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    },
+    "mendeley_data": null,
+    "openml": {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "platform": "openml",
+      "external_url": "https://www.openml.org/d/47170",
+      "doi": null,
+      "artifact_id": "47170",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"dataset_id\": \"47170\",\n  \"openml_url\": \"https://www.openml.org/d/47170\",\n  \"target_column\": null,\n  \"row_id_column\": null,\n  \"ignore_columns\": [],\n  \"collection_date\": \"2026-04-06\",\n  \"server\": \"https://www.openml.org/api/v1/xml\",\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-06T00:08:37.091195+00:00",
+      "last_attempt_utc": "2026-04-06T00:08:37.091195+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    },
+    "zenodo": {
+      "canonical_hash": "6c7f40cf139be88411c418497b70bfc8b6ba0389d2514138d0e207d127cbc2dd",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19433262",
+      "doi": "10.5281/zenodo.19433262",
+      "artifact_id": "19433262",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"create\",\n  \"deposition_id\": 19433262,\n  \"record_id\": 19433262,\n  \"conceptrecid\": \"19433261\",\n  \"validation_summary\": {\n    \"title_length\": 40,\n    \"description_length\": 2641,\n    \"creator_count\": 1,\n    \"keywords_count\": 8,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://zenodo.org/api\"\n  },\n  \"new_version_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"draft_attempts\": [],\n  \"clear_summary\": {\n    \"existing_file_count\": 0,\n    \"deleted_file_ids\": [],\n    \"list_attempts\": [],\n    \"delete_attempts\": []\n  },\n  \"upload_results\": [\n    {\n      \"name\": \"customer_behavior_segments.csv\",\n      \"checksum\": \"md5:9fcd1d1d23c174fbbdc64b8d7660b608\",\n      \"size\": 645909\n    },\n    {\n      \"name\": \"customer_behavior_segments.json\",\n      \"checksum\": \"md5:a5aef1b73fbfc3172afe65a74212cec7\",\n      \"size\": 2543921\n    },\n    {\n      \"name\": \"README.md\",\n      \"checksum\": \"md5:599e306a077488a9f21706dc510fbeb6\",\n      \"size\": 2480\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"checksum\": \"md5:1be55afaa96b8b6664820ca772abeea9\",\n      \"size\": 8454\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"checksum\": \"md5:a231386621de4f74c77fab52f1b07642\",\n      \"size\": 5225\n    },\n    {\n      \"name\": \"customer_behavior_segments.parquet\",\n      \"checksum\": \"md5:21c9d11b03592066322dfa31ddcf0052\",\n      \"size\": 272886\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"file\": \"customer_behavior_segments.csv\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"customer_behavior_segments.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"metadata.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"artifact_manifest.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"customer_behavior_segments.parquet\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 202\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"doi\": \"10.5281/zenodo.19433262\"\n}",
+      "first_attempt_utc": "2026-04-06T00:08:37.070949+00:00",
+      "last_attempt_utc": "2026-04-06T00:08:37.070949+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-06",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-06T00:00:16.594866+00:00"
+    }
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": true
+  },
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "huggingface",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      }
+    ],
+    "canonical_hash": "dd9d1bff6f25989383ad4a140188d127fc803bdda057a496c112d42e2afb0b93"
+  },
+  "cross_platform_references": {
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-customer-behavior-segments"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47180",
+      "doi": null,
+      "artifact_id": "47180"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19503329",
+      "doi": "10.5281/zenodo.19503329",
+      "artifact_id": "19503329"
+    },
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/31985595",
+      "doi": "10.6084/m9.figshare.31985595.v1",
+      "artifact_id": "31985595"
+    }
+  }
+}

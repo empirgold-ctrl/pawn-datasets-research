@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-11T00:16:11.921286+00:00`
+Last updated: `2026-04-12T00:15:20.491437+00:00`
 
 ## Dataset Families
 
@@ -12,13 +12,21 @@ Last updated: `2026-04-11T00:16:11.921286+00:00`
 
 Synthetic category-level view of collateral mix, value bands, and liquidity characteristics.
 
-- Latest version: `2026-04-07`
+- Latest version: `2026-04-12`
 - Latest scenario: `seasonal_back_to_school`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/README.md
 - Latest summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.
 
 #### Version History
 
+- `2026-04-12` | `seasonal_back_to_school` | rows `48` | realism `1.0`
+  - Summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.
+  - Zenodo DOI: 10.5281/zenodo.19521225
+  - Zenodo: https://zenodo.org/record/19521225
+  - Figshare: https://api.figshare.com/v2/articles/31988883
+  - Openml: https://www.openml.org/d/47181
+  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity
+  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-12/README.md
 - `2026-04-07` | `seasonal_back_to_school` | rows `48` | realism `1.0`
   - Summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.
   - Zenodo DOI: 10.5281/zenodo.19446296
@@ -46,6 +54,7 @@ Synthetic behavioral segmentation of pawn customer patterns without identifying 
   - Openml: https://www.openml.org/d/47180
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments
   - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-11/README.md
+  - Huggingface: https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-customer-behavior-segments
 - `2026-04-06` | `consumer_stress_cycle` | rows `7136` | realism `1.0`
   - Summary: Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 7,136 rows under the consumer stress cycle scenario.
   - Zenodo DOI: 10.5281/zenodo.19433262

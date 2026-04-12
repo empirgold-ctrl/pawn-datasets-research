@@ -1,0 +1,317 @@
+{
+  "dataset_name": "collateral_distribution_and_liquidity",
+  "dataset_version": "2026-04-12",
+  "scenario_name": "seasonal_back_to_school",
+  "scenario_signature": "6e537cd56435c38073ffc599717d3ef9f9be0492040687f804aeefb373027362",
+  "schema_signature": "cb88c5165906c4bddce265582046ecd78913259cb0708171daaadfd35f5b5405",
+  "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+  "row_count": 48,
+  "build_timestamp": "2026-04-12T00:13:42.228119+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-12_648d207daea6",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-12_648d207daea6\\collateral_distribution_and_liquidity.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-12_648d207daea6\\collateral_distribution_and_liquidity.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-12_648d207daea6\\collateral_distribution_and_liquidity.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-12_648d207daea6\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-12_648d207daea6\\metadata.json",
+  "schema": [
+    {
+      "name": "category",
+      "type": "string"
+    },
+    {
+      "name": "subcategory",
+      "type": "string"
+    },
+    {
+      "name": "share_of_total_items",
+      "type": "float"
+    },
+    {
+      "name": "avg_estimated_value",
+      "type": "float"
+    },
+    {
+      "name": "median_estimated_value",
+      "type": "float"
+    },
+    {
+      "name": "avg_loan_amount",
+      "type": "float"
+    },
+    {
+      "name": "liquidity_score",
+      "type": "float"
+    },
+    {
+      "name": "volatility_score",
+      "type": "float"
+    },
+    {
+      "name": "seasonal_demand_index",
+      "type": "float"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic category-level view of collateral mix, value bands, and liquidity characteristics.",
+  "scenario_narrative": "Electronics and smaller-ticket demand shift seasonally as late-summer and early-fall liquidity needs rise.",
+  "validation_metrics": {
+    "row_count": 48,
+    "null_counts": {
+      "category": 0,
+      "subcategory": 0,
+      "share_of_total_items": 0,
+      "avg_estimated_value": 0,
+      "median_estimated_value": 0,
+      "avg_loan_amount": 0,
+      "liquidity_score": 0,
+      "volatility_score": 0,
+      "seasonal_demand_index": 0
+    },
+    "share_sum": 100.0002
+  },
+  "realism_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "null_threshold",
+        "passed": true,
+        "detail": "No nulls in required fields"
+      },
+      {
+        "name": "share_sum",
+        "passed": true,
+        "detail": "sum=100.0002"
+      },
+      {
+        "name": "refchecker_faithfulness",
+        "passed": true,
+        "detail": "Skipped Refchecker validation (refchecker module not available)."
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "dataset_summary": "Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.",
+  "key_observations": [
+    "Collateral shares normalize to 100.00% of total inventory, keeping the mix internally consistent.",
+    "Jewelry and many electronics rows retain higher liquidity scores than tools or miscellaneous collateral, which preserves realistic resale asymmetry.",
+    "The seasonal back to school scenario keeps both mid-value and high-value subcategories in the same bundle so analysts can see meaningful spread instead of flat averages."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "12ef10216e0d538a0fe05ac307c0185a694a5d5492c041c55057dbb270e5520a",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411057",
+      "doi": "10.5281/zenodo.19411057",
+      "artifact_id": "19411057",
+      "status": "published",
+      "dataset_version": "2026-04-03",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-03T21:33:01.934822+00:00"
+    },
+    {
+      "canonical_hash": "ecf983e9fc2d2dafc1bacfbfe9ccc05b189703fd251d3592453fd0527e2c867c",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19411864",
+      "doi": "10.5281/zenodo.19411864",
+      "artifact_id": "19411864",
+      "status": "published",
+      "dataset_version": "2026-04-04",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-04T00:39:44.684310+00:00"
+    },
+    {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19502492",
+      "doi": "10.5281/zenodo.19502492",
+      "artifact_id": "19502492",
+      "status": "published",
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    },
+    {
+      "canonical_hash": "dd9d1bff6f25989383ad4a140188d127fc803bdda057a496c112d42e2afb0b93",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19503329",
+      "doi": "10.5281/zenodo.19503329",
+      "artifact_id": "19503329",
+      "status": "published",
+      "dataset_version": "2026-04-11",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-11T00:14:25.846479+00:00"
+    }
+  ],
+  "seed": 154263003970439,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "collateral_distribution_and_liquidity:2026-04-12:seasonal_back_to_school",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": {
+    "platform": "github_index",
+    "label": "Full dataset index",
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-12_648d207daea6\\artifact_manifest.json",
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml",
+    "huggingface"
+  ],
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": null,
+    "github": {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "platform": "github",
+      "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md",
+      "doi": null,
+      "artifact_id": "empirgold-ctrl/pawn-datasets-research:datasets/collateral_distribution_and_liquidity/2026-04-07",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n  \"branch\": \"main\",\n  \"validation_summary\": {\n    \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n    \"branch\": \"main\",\n    \"cross_reference_count\": 3,\n    \"required_artifacts_present\": true\n  },\n  \"master_index_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md\",\n  \"master_index_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n  \"dataset_readme_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md\",\n  \"dataset_readme_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md\",\n  \"uploaded_files\": [\n    {\n      \"path\": \"README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"dataset_index.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-07/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-07/metadata.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-07/artifact_manifest.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-07/version_record.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"public_checks\": [\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-07T00:33:18.763515+00:00",
+      "last_attempt_utc": "2026-04-07T00:33:18.763515+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    },
+    "huggingface": null,
+    "kaggle": {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "platform": "kaggle",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-collateral-liquidity",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"stdout\": \"Starting upload for file artifact_manifest.json\\nUpload successful: artifact_manifest.json (6KB)\\nStarting upload for file collateral_distribution_and_liquidity.csv\\nUpload successful: collateral_distribution_and_liquidity.csv (3KB)\\nStarting upload for file collateral_distribution_and_liquidity.json\\nUpload successful: collateral_distribution_and_liquidity.json (15KB)\\nStarting upload for file collateral_distribution_and_liquidity.parquet\\nUpload successful: collateral_distribution_and_liquidity.parquet (9KB)\\nStarting upload for file metadata.json\\nUpload successful: metadata.json (9KB)\\nStarting upload for file README.md\\nUpload successful: README.md (3KB)\\nYour public Dataset is being created. Please check progress at https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity\",\n  \"stderr\": \"0%|          | 0.00/5.77k [00:00<?, ?B/s]\\n100%|##########| 5.77k/5.77k [00:02<00:00, 2.23kB/s]\\n100%|##########| 5.77k/5.77k [00:04<00:00, 1.30kB/s]\\n\\n  0%|          | 0.00/3.35k [00:00<?, ?B/s]\\n100%|##########| 3.35k/3.35k [00:02<00:00, 1.31kB/s]\\n100%|##########| 3.35k/3.35k [00:04<00:00, 853B/s]  \\n\\n  0%|          | 0.00/14.9k [00:00<?, ?B/s]\\n100%|##########| 14.9k/14.9k [00:01<00:00, 13.3kB/s]\\n100%|##########| 14.9k/14.9k [00:01<00:00, 10.2kB/s]\\n\\n  0%|          | 0.00/9.36k [00:00<?, ?B/s]\\n100%|##########| 9.36k/9.36k [00:00<00:00, 27.0kB/s]\\n\\n  0%|          | 0.00/8.85k [00:00<?, ?B/s]\\n100%|##########| 8.85k/8.85k [00:00<00:00, 89.8kB/s]\\n100%|##########| 8.85k/8.85k [00:00<00:00, 21.9kB/s]\\n\\n  0%|          | 0.00/2.66k [00:00<?, ?B/s]\\n100%|##########| 2.66k/2.66k [00:00<00:00, 23.0kB/s]\\n100%|##########| 2.66k/2.66k [00:00<00:00, 6.31kB/s]\",\n  \"dataset_exists\": false,\n  \"dataset_id\": \"genefur/kgp-synthetic-collateral-liquidity\",\n  \"validation_summary\": {\n    \"title_length\": 34,\n    \"subtitle_length\": 65,\n    \"slug\": \"kgp-synthetic-collateral-liquidity\",\n    \"readme_length\": 2669,\n    \"required_artifacts_present\": true\n  },\n  \"status_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"status_forbidden_fallback\",\n      \"message\": \"403 Client Error: Forbidden for url: https://api.kaggle.com/v1/datasets.DatasetApiService/GetDatasetStatus\"\n    }\n  ],\n  \"public_page_attempts\": [],\n  \"metadata_update_attempts\": [],\n  \"metadata_update_error\": null,\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-07T00:33:18.752343+00:00",
+      "last_attempt_utc": "2026-04-07T00:33:18.752343+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    },
+    "mendeley_data": null,
+    "openml": {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "platform": "openml",
+      "external_url": "https://www.openml.org/d/47172",
+      "doi": null,
+      "artifact_id": "47172",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"dataset_id\": \"47172\",\n  \"openml_url\": \"https://www.openml.org/d/47172\",\n  \"target_column\": null,\n  \"row_id_column\": null,\n  \"ignore_columns\": [],\n  \"collection_date\": \"2026-04-07\",\n  \"server\": \"https://www.openml.org/api/v1/xml\",\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-07T00:33:18.743156+00:00",
+      "last_attempt_utc": "2026-04-07T00:33:18.743156+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    },
+    "zenodo": {
+      "canonical_hash": "1b60966a65a39597fc1424a8735d57b871eae25b44aa734e0a602c35c91bab08",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19446296",
+      "doi": "10.5281/zenodo.19446296",
+      "artifact_id": "19446296",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"create\",\n  \"deposition_id\": 19446296,\n  \"record_id\": 19446296,\n  \"conceptrecid\": \"19446295\",\n  \"validation_summary\": {\n    \"title_length\": 51,\n    \"description_length\": 2846,\n    \"creator_count\": 1,\n    \"keywords_count\": 8,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://zenodo.org/api\"\n  },\n  \"new_version_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"draft_attempts\": [],\n  \"clear_summary\": {\n    \"existing_file_count\": 0,\n    \"deleted_file_ids\": [],\n    \"list_attempts\": [],\n    \"delete_attempts\": []\n  },\n  \"upload_results\": [\n    {\n      \"name\": \"collateral_distribution_and_liquidity.csv\",\n      \"checksum\": \"md5:3f2caf669c9dcc53e94d6b6b6c542c81\",\n      \"size\": 3435\n    },\n    {\n      \"name\": \"collateral_distribution_and_liquidity.json\",\n      \"checksum\": \"md5:b8a6cf045fa50d24fbcfdffac0c4d046\",\n      \"size\": 15281\n    },\n    {\n      \"name\": \"README.md\",\n      \"checksum\": \"md5:f5a8634675326e12dd6d22c610a56af8\",\n      \"size\": 2645\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"checksum\": \"md5:4828aa31f6a6f57551cf00e178bd6946\",\n      \"size\": 8916\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"checksum\": \"md5:a7061f34eb4ca96e206e021944e92122\",\n      \"size\": 5762\n    },\n    {\n      \"name\": \"collateral_distribution_and_liquidity.parquet\",\n      \"checksum\": \"md5:e2b0d6e7943a73f8bfcbfd00a8a3941a\",\n      \"size\": 9587\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"file\": \"collateral_distribution_and_liquidity.csv\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"collateral_distribution_and_liquidity.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"metadata.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"artifact_manifest.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"collateral_distribution_and_liquidity.parquet\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 202\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"doi\": \"10.5281/zenodo.19446296\"\n}",
+      "first_attempt_utc": "2026-04-07T00:33:18.715264+00:00",
+      "last_attempt_utc": "2026-04-07T00:33:18.715264+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-07",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-07T00:30:47.641402+00:00"
+    }
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": true
+  },
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "huggingface",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      }
+    ],
+    "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76"
+  },
+  "cross_platform_references": {
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-collateral-liquidity"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47181",
+      "doi": null,
+      "artifact_id": "47181"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19521225",
+      "doi": "10.5281/zenodo.19521225",
+      "artifact_id": "19521225"
+    },
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/31988883",
+      "doi": "10.6084/m9.figshare.31988883.v1",
+      "artifact_id": "31988883"
+    }
+  }
+}

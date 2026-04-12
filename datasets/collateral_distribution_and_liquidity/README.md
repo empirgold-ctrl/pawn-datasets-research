@@ -6,7 +6,7 @@ Full dataset index: https://github.com/empirgold-ctrl/pawn-datasets-research/blo
 
 ## Latest Version
 
-- Version: `2026-04-07`
+- Version: `2026-04-12`
 - Scenario: `seasonal_back_to_school`
 - Row count: `48`
 - Realism score: `1.0`
@@ -20,4 +20,5 @@ Full dataset index: https://github.com/empirgold-ctrl/pawn-datasets-research/blo
 
 ## Available Versions
 
+- `2026-04-12` | `seasonal_back_to_school` | GitHub: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-12/README.md
 - `2026-04-07` | `seasonal_back_to_school` | GitHub: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-07/README.md

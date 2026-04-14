@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-12T00:15:20.491437+00:00`
+Last updated: `2026-04-14T18:03:47.613781+00:00`
 
 ## Dataset Families
 
@@ -27,6 +27,7 @@ Synthetic category-level view of collateral mix, value bands, and liquidity char
   - Openml: https://www.openml.org/d/47181
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity
   - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-12/README.md
+  - Huggingface: https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity
 - `2026-04-07` | `seasonal_back_to_school` | rows `48` | realism `1.0`
   - Summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.
   - Zenodo DOI: 10.5281/zenodo.19446296
@@ -95,13 +96,21 @@ Synthetic time-series linking gold price movements to pawn loan volume and avera
 
 Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.
 
-- Latest version: `2026-04-09`
+- Latest version: `2026-04-14`
 - Latest scenario: `baseline`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/README.md
-- Latest summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.
+- Latest summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 37 rows under the baseline scenario.
 
 #### Version History
 
+- `2026-04-14` | `baseline` | rows `37` | realism `1.0`
+  - Summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 37 rows under the baseline scenario.
+  - Zenodo DOI: 10.5281/zenodo.19579387
+  - Zenodo: https://zenodo.org/record/19579387
+  - Figshare: https://api.figshare.com/v2/articles/32013501
+  - Openml: https://www.openml.org/d/47184
+  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open
+  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-14/README.md
 - `2026-04-09` | `baseline` | rows `13675` | realism `1.0`
   - Summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.
   - Figshare: https://api.figshare.com/v2/articles/31968423

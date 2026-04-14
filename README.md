@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-14T18:03:47.613781+00:00`
+Last updated: `2026-04-14T18:03:47.611271+00:00`
 
 ## Dataset Families
 
@@ -96,21 +96,13 @@ Synthetic time-series linking gold price movements to pawn loan volume and avera
 
 Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.
 
-- Latest version: `2026-04-14`
+- Latest version: `2026-04-09`
 - Latest scenario: `baseline`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/README.md
-- Latest summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 37 rows under the baseline scenario.
+- Latest summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.
 
 #### Version History
 
-- `2026-04-14` | `baseline` | rows `37` | realism `1.0`
-  - Summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 37 rows under the baseline scenario.
-  - Zenodo DOI: 10.5281/zenodo.19579387
-  - Zenodo: https://zenodo.org/record/19579387
-  - Figshare: https://api.figshare.com/v2/articles/32013501
-  - Openml: https://www.openml.org/d/47184
-  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open
-  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/2026-04-14/README.md
 - `2026-04-09` | `baseline` | rows `13675` | realism `1.0`
   - Summary: Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario.
   - Figshare: https://api.figshare.com/v2/articles/31968423
@@ -138,13 +130,21 @@ Synthetic dataset modeling pawn loan activity by category, amount, duration, and
 
 Synthetic macro and regional operating environment indicators for pawn and collateral lending.
 
-- Latest version: `2026-04-08`
+- Latest version: `2026-04-13`
 - Latest scenario: `holiday_liquidity_spike`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/README.md
-- Latest summary: Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 252 rows under the holiday liquidity spike scenario.
+- Latest summary: Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 37 rows under the holiday liquidity spike scenario.
 
 #### Version History
 
+- `2026-04-13` | `holiday_liquidity_spike` | rows `37` | realism `1.0`
+  - Summary: Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 37 rows under the holiday liquidity spike scenario.
+  - Zenodo DOI: 10.5281/zenodo.19579386
+  - Zenodo: https://zenodo.org/record/19579386
+  - Figshare: https://api.figshare.com/v2/articles/32013498
+  - Openml: https://www.openml.org/d/47183
+  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions
+  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-13/README.md
 - `2026-04-08` | `holiday_liquidity_spike` | rows `252` | realism `1.0`
   - Summary: Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 252 rows under the holiday liquidity spike scenario.
   - Openml: https://www.openml.org/d/47173

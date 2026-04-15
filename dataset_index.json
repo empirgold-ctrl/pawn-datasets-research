@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-14T18:03:47.611271+00:00",
+  "generated_utc": "2026-04-15T01:02:26.411657+00:00",
   "families": [
     {
       "dataset_name": "collateral_distribution_and_liquidity",
@@ -182,6 +182,47 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "canonical_hash": "5417f41d712b1841d7a5f23a63a0bc34c4dcfa204947a98f54e65923621b04e9",
+          "dataset_version": "2026-04-15",
+          "scenario_name": "high_gold_price_cycle",
+          "row_count": 37,
+          "build_timestamp": "2026-04-15T01:00:21.545385+00:00",
+          "dataset_summary": "Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 37 rows under the high gold price cycle scenario.",
+          "description": "Synthetic time-series linking gold price movements to pawn loan volume and average ticket size.",
+          "key_observations": [
+            "Gold prices keep a directional time-series trend instead of flat noise, with a time correlation of 0.00.",
+            "Average jewelry loan amounts move with gold prices, with a modeled correlation of 0.00.",
+            "This build contributes 37 daily observations so macro shifts can be studied without losing regional variation."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/32016027",
+              "doi": "10.6084/m9.figshare.32016027.v1"
+            },
+            "huggingface": {
+              "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity",
+              "doi": null
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity",
+              "doi": null
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47179",
+              "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19583190",
+              "doi": "10.5281/zenodo.19583190"
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-15/README.md",
+              "doi": null
+            }
+          }
+        },
+        {
           "dataset_name": "gold_price_vs_pawn_activity",
           "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
           "dataset_version": "2026-04-10",
@@ -258,9 +299,9 @@
           }
         }
       ],
-      "latest_version": "2026-04-10",
+      "latest_version": "2026-04-15",
       "latest_scenario": "high_gold_price_cycle",
-      "latest_summary": "Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 731 rows under the high gold price cycle scenario."
+      "latest_summary": "Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 37 rows under the high gold price cycle scenario."
     },
     {
       "dataset_name": "pawn_loan_activity",
@@ -268,6 +309,44 @@
       "family_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/pawn_loan_activity/README.md",
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
+        {
+          "dataset_name": "pawn_loan_activity",
+          "canonical_hash": "71917cbcd7d6a343f629a3ad60ca7ae4b237e0502a2460db02eaa59a9ef79a51",
+          "dataset_version": "2026-04-14",
+          "scenario_name": "baseline",
+          "row_count": 37,
+          "build_timestamp": "2026-04-14T18:01:47.634560+00:00",
+          "dataset_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 37 rows under the baseline scenario.",
+          "description": "Synthetic dataset modeling pawn loan activity by category, amount, duration, and region.",
+          "key_observations": [
+            "Loan amounts remain heavy-tailed, with the 95th percentile landing about 0.00x the median ticket size.",
+            "Repeat customers default at 0.0% versus 0.0% for non-repeat borrowers.",
+            "Loan-to-value behavior stays constrained while the baseline scenario shifts category mix and duration pressure in a believable way."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "huggingface": {
+              "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-pawn-loan-activity",
+              "doi": null
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-pawn-loan-activity-open",
+              "doi": null
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47184",
+              "doi": null
+            },
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/32013501",
+              "doi": "10.6084/m9.figshare.32013501.v1"
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19579387",
+              "doi": "10.5281/zenodo.19579387"
+            }
+          }
+        },
         {
           "dataset_name": "pawn_loan_activity",
           "canonical_hash": "33e603165de696184c18a91597138a11be5932bf47e2fa8d517284eb38d10a7a",
@@ -403,9 +482,9 @@
           }
         }
       ],
-      "latest_version": "2026-04-09",
+      "latest_version": "2026-04-14",
       "latest_scenario": "baseline",
-      "latest_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 13,675 rows under the baseline scenario."
+      "latest_summary": "Synthetic pawn loan records tie collateral mix, loan sizing, durations, and repayment behavior together across New York regions. This build contains 37 rows under the baseline scenario."
     },
     {
       "dataset_name": "regional_pawn_market_conditions",
@@ -414,6 +493,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "regional_pawn_market_conditions",
           "canonical_hash": "64b980a845ec59242d5d11751dcab0f22002f8a49efc4fda90797db4bb9c6be1",
           "dataset_version": "2026-04-13",
           "scenario_name": "holiday_liquidity_spike",
@@ -428,6 +508,14 @@
           ],
           "realism_score": 1.0,
           "links": {
+            "huggingface": {
+              "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-regional-pawn-market-conditions",
+              "doi": null
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-13/README.md",
+              "doi": null
+            },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
               "doi": null
@@ -436,17 +524,13 @@
               "external_url": "https://www.openml.org/d/47183",
               "doi": null
             },
-            "zenodo": {
-              "external_url": "https://zenodo.org/record/19579386",
-              "doi": "10.5281/zenodo.19579386"
-            },
             "figshare": {
               "external_url": "https://api.figshare.com/v2/articles/32013498",
               "doi": "10.6084/m9.figshare.32013498.v1"
             },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-13/README.md",
-              "doi": null
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19579386",
+              "doi": "10.5281/zenodo.19579386"
             }
           }
         },

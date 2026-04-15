@@ -1,0 +1,327 @@
+{
+  "dataset_name": "gold_price_vs_pawn_activity",
+  "dataset_version": "2026-04-15",
+  "scenario_name": "high_gold_price_cycle",
+  "scenario_signature": "d3f0f01453a461f86a53aa53e0b4e311660b2ec1943a918ea983d49c46050b64",
+  "schema_signature": "6ebf2e81095a7198de8719c35be8bb4dae9d90f171f361cbb2104badc1fc14a3",
+  "canonical_hash": "5417f41d712b1841d7a5f23a63a0bc34c4dcfa204947a98f54e65923621b04e9",
+  "row_count": 37,
+  "build_timestamp": "2026-04-15T01:00:21.545385+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\gold_price_vs_pawn_activity\\2026-04-15_5417f41d712b",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\gold_price_vs_pawn_activity\\2026-04-15_5417f41d712b\\gold_price_vs_pawn_activity.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\gold_price_vs_pawn_activity\\2026-04-15_5417f41d712b\\gold_price_vs_pawn_activity.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\gold_price_vs_pawn_activity\\2026-04-15_5417f41d712b\\gold_price_vs_pawn_activity.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\gold_price_vs_pawn_activity\\2026-04-15_5417f41d712b\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\gold_price_vs_pawn_activity\\2026-04-15_5417f41d712b\\metadata.json",
+  "schema": [
+    {
+      "name": "date",
+      "type": "string"
+    },
+    {
+      "name": "max_temp_celsius",
+      "type": "float"
+    },
+    {
+      "name": "precipitation_mm",
+      "type": "float"
+    },
+    {
+      "name": "btc_price_usd",
+      "type": "float"
+    },
+    {
+      "name": "nyc_commercial_activity_index",
+      "type": "float"
+    },
+    {
+      "name": "synthetic_pawn_collateral_risk",
+      "type": "float"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic time-series linking gold price movements to pawn loan volume and average ticket size.",
+  "scenario_narrative": "During periods of rising gold prices, jewelry-related loan values and metal-linked activity rise without making overall demand cartoonish.",
+  "validation_metrics": {
+    "row_count": 37,
+    "api_mode": true
+  },
+  "realism_summary": {
+    "realism_score": 1.0,
+    "checks": [
+      {
+        "name": "api_schema_validated",
+        "passed": true,
+        "detail": "Dataset correctly wrapped live Open-Meteo/CoinGecko matrix"
+      },
+      {
+        "name": "refchecker_faithfulness",
+        "passed": true,
+        "detail": "Skipped Refchecker validation (refchecker module not available)."
+      }
+    ],
+    "impossible_combination_count": 0
+  },
+  "dataset_summary": "Synthetic daily gold-linked lending data tracks how price movement, jewelry exposure, loan volume, and repayment behavior move together over time. This build contains 37 rows under the high gold price cycle scenario.",
+  "key_observations": [
+    "Gold prices keep a directional time-series trend instead of flat noise, with a time correlation of 0.00.",
+    "Average jewelry loan amounts move with gold prices, with a modeled correlation of 0.00.",
+    "This build contributes 37 daily observations so macro shifts can be studied without losing regional variation."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "dd9d1bff6f25989383ad4a140188d127fc803bdda057a496c112d42e2afb0b93",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19503329",
+      "doi": "10.5281/zenodo.19503329",
+      "artifact_id": "19503329",
+      "status": "published",
+      "dataset_version": "2026-04-11",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-11T00:14:25.846479+00:00"
+    },
+    {
+      "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19521225",
+      "doi": "10.5281/zenodo.19521225",
+      "artifact_id": "19521225",
+      "status": "published",
+      "dataset_version": "2026-04-12",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-12T00:13:42.228119+00:00"
+    },
+    {
+      "canonical_hash": "64b980a845ec59242d5d11751dcab0f22002f8a49efc4fda90797db4bb9c6be1",
+      "dataset_name": "regional_pawn_market_conditions",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19579386",
+      "doi": "10.5281/zenodo.19579386",
+      "artifact_id": "19579386",
+      "status": "published",
+      "dataset_version": "2026-04-13",
+      "scenario_name": "holiday_liquidity_spike",
+      "build_timestamp": "2026-04-14T18:01:42.376882+00:00"
+    },
+    {
+      "canonical_hash": "71917cbcd7d6a343f629a3ad60ca7ae4b237e0502a2460db02eaa59a9ef79a51",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19579387",
+      "doi": "10.5281/zenodo.19579387",
+      "artifact_id": "19579387",
+      "status": "published",
+      "dataset_version": "2026-04-14",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-14T18:01:47.634560+00:00"
+    }
+  ],
+  "seed": 158724721917470,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "gold_price_vs_pawn_activity:2026-04-15:high_gold_price_cycle",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": {
+    "platform": "github_index",
+    "label": "Full dataset index",
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\gold_price_vs_pawn_activity\\2026-04-15_5417f41d712b\\artifact_manifest.json",
+  "dynamic_citations": "*   **Microsoft Sysinternals**: Telemetry aggregation methodology structurally inspired by [ProcMon](https://github.com/microsoft/Sysinternals)\n*   **Google Research**: Statistical smoothing parameters referenced via [TensorFlow Datasets](https://github.com/google/tensorflow)",
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml",
+    "huggingface"
+  ],
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "platform": "figshare",
+      "external_url": "https://api.figshare.com/v2/articles/31985433",
+      "doi": "10.6084/m9.figshare.31985433.v1",
+      "artifact_id": "31985433",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"create\",\n  \"article_id\": \"31985433\",\n  \"validation_summary\": {\n    \"title_length\": 48,\n    \"description_length\": 1661,\n    \"tags_count\": 7,\n    \"references_count\": 5,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://api.figshare.com/v2\"\n  },\n  \"create_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"article_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"clear_summary\": {\n    \"existing_file_count\": 0,\n    \"deleted_file_ids\": [],\n    \"list_attempts\": [\n      {\n        \"attempt\": 1,\n        \"outcome\": \"success\",\n        \"status_code\": 200\n      }\n    ],\n    \"delete_attempts\": []\n  },\n  \"upload_summaries\": [\n    {\n      \"name\": \"gold_price_vs_pawn_activity.csv\",\n      \"file_id\": \"63628329\",\n      \"size\": 59030,\n      \"md5\": \"bb278cb24b2265c6c74b4bc143f45a4e\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 59029,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"gold_price_vs_pawn_activity.json\",\n      \"file_id\": \"63628332\",\n      \"size\": 248935,\n      \"md5\": \"07a15c6d2352c012a7766ef30a50ef10\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 248934,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"README.md\",\n      \"file_id\": \"63628335\",\n      \"size\": 3428,\n      \"md5\": \"9c8caa0dd61ea8d51dba298ec8da9332\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 3427,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"file_id\": \"63628338\",\n      \"size\": 21946,\n      \"md5\": \"9df8ebea7bca956473db592965dde016\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 21945,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"file_id\": \"63628341\",\n      \"size\": 6335,\n      \"md5\": \"4ee609893eae5fb6705a415acce29e5b\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 6334,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"gold_price_vs_pawn_activity.parquet\",\n      \"file_id\": \"63628344\",\n      \"size\": 42227,\n      \"md5\": \"d085829a4fd70586c01301d9bf389bab\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 42226,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 205\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"public_lookup_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"draft_payload\": {\n    \"id\": 31985433,\n    \"version\": 0\n  },\n  \"doi\": \"10.6084/m9.figshare.31985433.v1\"\n}",
+      "first_attempt_utc": "2026-04-10T21:33:53.141564+00:00",
+      "last_attempt_utc": "2026-04-10T21:33:53.141564+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    },
+    "github": {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "platform": "github",
+      "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-10/README.md",
+      "doi": null,
+      "artifact_id": "empirgold-ctrl/pawn-datasets-research:datasets/gold_price_vs_pawn_activity/2026-04-10",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n  \"branch\": \"main\",\n  \"validation_summary\": {\n    \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n    \"branch\": \"main\",\n    \"cross_reference_count\": 4,\n    \"required_artifacts_present\": true\n  },\n  \"master_index_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md\",\n  \"master_index_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n  \"dataset_readme_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-10/README.md\",\n  \"dataset_readme_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/gold_price_vs_pawn_activity/2026-04-10/README.md\",\n  \"uploaded_files\": [\n    {\n      \"path\": \"README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"dataset_index.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/gold_price_vs_pawn_activity/README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/gold_price_vs_pawn_activity/2026-04-10/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/gold_price_vs_pawn_activity/2026-04-10/metadata.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/gold_price_vs_pawn_activity/2026-04-10/artifact_manifest.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/gold_price_vs_pawn_activity/2026-04-10/version_record.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"public_checks\": [\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/gold_price_vs_pawn_activity/2026-04-10/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-10T21:33:53.195073+00:00",
+      "last_attempt_utc": "2026-04-10T21:33:53.195073+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    },
+    "huggingface": {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "platform": "huggingface",
+      "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity",
+      "doi": null,
+      "artifact_id": "CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo_id\": \"CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity\",\n  \"resolved_username\": \"CollateralAnalytics\",\n  \"dataset_name\": \"gold_price_vs_pawn_activity\",\n  \"dataset_version\": \"2026-04-10\",\n  \"scenario_name\": \"high_gold_price_cycle\",\n  \"create_attempts\": [\n    {\n      \"outcome\": \"success\",\n      \"repo_id\": \"CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity\"\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"outcome\": \"success\"\n    }\n  ],\n  \"cross_platform_references_count\": 5\n}",
+      "first_attempt_utc": "2026-04-10T21:33:53.210138+00:00",
+      "last_attempt_utc": "2026-04-10T21:33:53.210138+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    },
+    "kaggle": {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "platform": "kaggle",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-gold-price-vs-pawn-activity",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"stdout\": \"Starting upload for file artifact_manifest.json\\nWarning: Looks like you're using an outdated `kaggle` version (installed: 2.0.0), please consider upgrading to the latest version (2.0.1)\\nUpload successful: artifact_manifest.json (6KB)\\nStarting upload for file gold_price_vs_pawn_activity.csv\\nUpload successful: gold_price_vs_pawn_activity.csv (58KB)\\nStarting upload for file gold_price_vs_pawn_activity.json\\nUpload successful: gold_price_vs_pawn_activity.json (243KB)\\nStarting upload for file gold_price_vs_pawn_activity.parquet\\nUpload successful: gold_price_vs_pawn_activity.parquet (41KB)\\nStarting upload for file metadata.json\\nUpload successful: metadata.json (21KB)\\nStarting upload for file README.md\\nUpload successful: README.md (3KB)\\nDataset version is being created. Please check progress at https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity\",\n  \"stderr\": \"0%|          | 0.00/6.15k [00:00<?, ?B/s]\\n100%|##########| 6.15k/6.15k [00:00<00:00, 19.7kB/s]\\n\\n  0%|          | 0.00/57.6k [00:00<?, ?B/s]\\n100%|##########| 57.6k/57.6k [00:00<00:00, 187kB/s]\\n\\n  0%|          | 0.00/243k [00:00<?, ?B/s]\\n 46%|####6     | 112k/243k [00:00<00:00, 1.04MB/s]\\n100%|##########| 243k/243k [00:00<00:00, 428kB/s] \\n\\n  0%|          | 0.00/41.2k [00:00<?, ?B/s]\\n100%|##########| 41.2k/41.2k [00:00<00:00, 130kB/s]\\n\\n  0%|          | 0.00/21.4k [00:00<?, ?B/s]\\n100%|##########| 21.4k/21.4k [00:00<00:00, 71.1kB/s]\\n\\n  0%|          | 0.00/3.31k [00:00<?, ?B/s]\\n100%|##########| 3.31k/3.31k [00:00<00:00, 9.83kB/s]\",\n  \"dataset_exists\": true,\n  \"dataset_id\": \"genefur/kgp-synthetic-gold-price-vs-pawn-activity\",\n  \"validation_summary\": {\n    \"title_length\": 35,\n    \"subtitle_length\": 63,\n    \"slug\": \"kgp-synthetic-gold-price-vs-pawn-activity\",\n    \"readme_length\": 3333,\n    \"required_artifacts_present\": true\n  },\n  \"status_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ],\n  \"public_page_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"metadata_update_attempts\": [],\n  \"metadata_update_error\": null,\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-10T21:33:53.178892+00:00",
+      "last_attempt_utc": "2026-04-10T21:33:53.178892+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    },
+    "mendeley_data": null,
+    "openml": {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "platform": "openml",
+      "external_url": "https://www.openml.org/d/47179",
+      "doi": null,
+      "artifact_id": "47179",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"dataset_id\": \"47179\",\n  \"openml_url\": \"https://www.openml.org/d/47179\",\n  \"target_column\": null,\n  \"row_id_column\": null,\n  \"ignore_columns\": [],\n  \"collection_date\": \"2026-04-10\",\n  \"server\": \"https://www.openml.org/api/v1/xml\",\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-10T21:33:53.160534+00:00",
+      "last_attempt_utc": "2026-04-10T21:33:53.160534+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    },
+    "zenodo": {
+      "canonical_hash": "d0ae5e257e1e3afe64e74e35c1ef0e2b3ed9e8d5a3e3d809c7cbbbc04ddb9558",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19502492",
+      "doi": "10.5281/zenodo.19502492",
+      "artifact_id": "19502492",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"new_version\",\n  \"deposition_id\": 19502492,\n  \"record_id\": 19502492,\n  \"conceptrecid\": \"19429677\",\n  \"validation_summary\": {\n    \"title_length\": 35,\n    \"description_length\": 2887,\n    \"creator_count\": 1,\n    \"keywords_count\": 8,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://zenodo.org/api\"\n  },\n  \"new_version_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"draft_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"clear_summary\": {\n    \"existing_file_count\": 6,\n    \"deleted_file_ids\": [\n      \"ff5d6d1a-81bc-47d4-91ea-315c35284847\",\n      \"29333a49-0fbb-4433-9e76-ccd0fa44146c\",\n      \"ff12772b-e198-4157-9073-2ab5c89ef02e\",\n      \"3dfb40d1-f3ed-4588-8984-4d46632f5d1c\",\n      \"39bdd3e0-4133-4e4f-aa4f-25cb7abe52d0\",\n      \"52eb6de4-f9e6-4852-a8eb-0598aeafc9e1\"\n    ],\n    \"list_attempts\": [\n      {\n        \"attempt\": 1,\n        \"outcome\": \"success\",\n        \"status_code\": 200\n      }\n    ],\n    \"delete_attempts\": [\n      {\n        \"file_id\": \"ff5d6d1a-81bc-47d4-91ea-315c35284847\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"29333a49-0fbb-4433-9e76-ccd0fa44146c\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"ff12772b-e198-4157-9073-2ab5c89ef02e\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"3dfb40d1-f3ed-4588-8984-4d46632f5d1c\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"39bdd3e0-4133-4e4f-aa4f-25cb7abe52d0\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"52eb6de4-f9e6-4852-a8eb-0598aeafc9e1\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      }\n    ]\n  },\n  \"upload_results\": [\n    {\n      \"name\": \"gold_price_vs_pawn_activity.csv\",\n      \"checksum\": \"md5:bb278cb24b2265c6c74b4bc143f45a4e\",\n      \"size\": 59030\n    },\n    {\n      \"name\": \"gold_price_vs_pawn_activity.json\",\n      \"checksum\": \"md5:07a15c6d2352c012a7766ef30a50ef10\",\n      \"size\": 248935\n    },\n    {\n      \"name\": \"README.md\",\n      \"checksum\": \"md5:37ebe954eb8478dc1372fcdfc70a7215\",\n      \"size\": 3308\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"checksum\": \"md5:95eaa7d29b4dd3c8bad4b56b5aff0c69\",\n      \"size\": 21716\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"checksum\": \"md5:ef62150c426c9bcfd0f59406b75f1f82\",\n      \"size\": 6105\n    },\n    {\n      \"name\": \"gold_price_vs_pawn_activity.parquet\",\n      \"checksum\": \"md5:d085829a4fd70586c01301d9bf389bab\",\n      \"size\": 42227\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"file\": \"gold_price_vs_pawn_activity.csv\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"gold_price_vs_pawn_activity.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"metadata.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"artifact_manifest.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"gold_price_vs_pawn_activity.parquet\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 202\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"doi\": \"10.5281/zenodo.19502492\"\n}",
+      "first_attempt_utc": "2026-04-10T21:33:53.129969+00:00",
+      "last_attempt_utc": "2026-04-10T21:33:53.129969+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-10",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-10T21:31:32.308591+00:00"
+    }
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": true
+  },
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "huggingface",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      }
+    ],
+    "canonical_hash": "5417f41d712b1841d7a5f23a63a0bc34c4dcfa204947a98f54e65923621b04e9"
+  },
+  "cross_platform_references": {
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/32016027",
+      "doi": "10.6084/m9.figshare.32016027.v1",
+      "artifact_id": "32016027"
+    },
+    "huggingface": {
+      "platform": "huggingface",
+      "label": "HuggingFace dataset mirror",
+      "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity",
+      "doi": null,
+      "artifact_id": "CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-gold-price-vs-pawn-activity"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47179",
+      "doi": null,
+      "artifact_id": "47179"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19583190",
+      "doi": "10.5281/zenodo.19583190",
+      "artifact_id": "19583190"
+    }
+  }
+}

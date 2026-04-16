@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-15T01:02:26.411657+00:00",
+  "generated_utc": "2026-04-16T00:11:04.124904+00:00",
   "families": [
     {
       "dataset_name": "collateral_distribution_and_liquidity",
@@ -95,6 +95,47 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "canonical_hash": "cf18a978ff30966252bfb93dc60fa9f3faa4c72785219a60eeb8dd16f74525c9",
+          "dataset_version": "2026-04-16",
+          "scenario_name": "consumer_stress_cycle",
+          "row_count": 37,
+          "build_timestamp": "2026-04-16T00:09:23.219207+00:00",
+          "dataset_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 37 rows under the consumer stress cycle scenario.",
+          "description": "Synthetic behavioral segmentation of pawn customer patterns without identifying real individuals.",
+          "key_observations": [
+            "Average annual visit frequency is 0.00, supporting repeat-use behavior instead of one-off random records.",
+            "Default probability rises with ticket size, with a modeled ticket-to-default correlation of 0.00.",
+            "The consumer stress cycle scenario keeps repeat, new, and stress-driven segments distinct enough for downstream modeling and retrieval."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/32030358",
+              "doi": "10.6084/m9.figshare.32030358.v1"
+            },
+            "huggingface": {
+              "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-customer-behavior-segments",
+              "doi": null
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments",
+              "doi": null
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47180",
+              "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19600668",
+              "doi": "10.5281/zenodo.19600668"
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-16/README.md",
+              "doi": null
+            }
+          }
+        },
+        {
           "dataset_name": "customer_behavior_segments",
           "canonical_hash": "dd9d1bff6f25989383ad4a140188d127fc803bdda057a496c112d42e2afb0b93",
           "dataset_version": "2026-04-11",
@@ -171,9 +212,9 @@
           }
         }
       ],
-      "latest_version": "2026-04-11",
+      "latest_version": "2026-04-16",
       "latest_scenario": "consumer_stress_cycle",
-      "latest_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 6,643 rows under the consumer stress cycle scenario."
+      "latest_summary": "Synthetic customer segments describe visit cadence, ticket size, collateral preferences, and modeled repayment risk without exposing any real borrower identities. This build contains 37 rows under the consumer stress cycle scenario."
     },
     {
       "dataset_name": "gold_price_vs_pawn_activity",
@@ -182,6 +223,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "gold_price_vs_pawn_activity",
           "canonical_hash": "5417f41d712b1841d7a5f23a63a0bc34c4dcfa204947a98f54e65923621b04e9",
           "dataset_version": "2026-04-15",
           "scenario_name": "high_gold_price_cycle",
@@ -196,29 +238,25 @@
           ],
           "realism_score": 1.0,
           "links": {
-            "figshare": {
-              "external_url": "https://api.figshare.com/v2/articles/32016027",
-              "doi": "10.6084/m9.figshare.32016027.v1"
-            },
             "huggingface": {
               "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-gold-price-vs-pawn-activity",
+              "doi": null
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-15/README.md",
               "doi": null
             },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-gold-price-vs-pawn-activity",
               "doi": null
             },
-            "openml": {
-              "external_url": "https://www.openml.org/d/47179",
-              "doi": null
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/32016027",
+              "doi": "10.6084/m9.figshare.32016027.v1"
             },
             "zenodo": {
               "external_url": "https://zenodo.org/record/19583190",
               "doi": "10.5281/zenodo.19583190"
-            },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/gold_price_vs_pawn_activity/2026-04-15/README.md",
-              "doi": null
             }
           }
         },

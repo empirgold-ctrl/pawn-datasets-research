@@ -1,0 +1,327 @@
+{
+  "dataset_name": "collateral_distribution_and_liquidity",
+  "dataset_version": "2026-04-17",
+  "scenario_name": "seasonal_back_to_school",
+  "scenario_signature": "6e537cd56435c38073ffc599717d3ef9f9be0492040687f804aeefb373027362",
+  "schema_signature": "6ebf2e81095a7198de8719c35be8bb4dae9d90f171f361cbb2104badc1fc14a3",
+  "canonical_hash": "0b31f59019016619d4f0eb0e6863448056545cd964a767e59e1e414b696d07dd",
+  "row_count": 37,
+  "build_timestamp": "2026-04-17T00:19:34.898518+00:00",
+  "bundle_dir": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901",
+  "csv_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\collateral_distribution_and_liquidity.csv",
+  "json_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\collateral_distribution_and_liquidity.json",
+  "parquet_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\collateral_distribution_and_liquidity.parquet",
+  "readme_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\README.md",
+  "metadata_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\metadata.json",
+  "schema": [
+    {
+      "name": "date",
+      "type": "string"
+    },
+    {
+      "name": "max_temp_celsius",
+      "type": "float"
+    },
+    {
+      "name": "precipitation_mm",
+      "type": "float"
+    },
+    {
+      "name": "btc_price_usd",
+      "type": "float"
+    },
+    {
+      "name": "nyc_commercial_activity_index",
+      "type": "float"
+    },
+    {
+      "name": "synthetic_pawn_collateral_risk",
+      "type": "float"
+    }
+  ],
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.",
+  "description": "Synthetic category-level view of collateral mix, value bands, and liquidity characteristics.",
+  "scenario_narrative": "Electronics and smaller-ticket demand shift seasonally as late-summer and early-fall liquidity needs rise.",
+  "validation_metrics": {
+    "api_mode": true,
+    "row_count": 37
+  },
+  "realism_summary": {
+    "checks": [
+      {
+        "detail": "Dataset correctly wrapped live Open-Meteo/CoinGecko matrix",
+        "name": "api_schema_validated",
+        "passed": true
+      },
+      {
+        "detail": "Skipped Refchecker validation (refchecker module not available).",
+        "name": "refchecker_faithfulness",
+        "passed": true
+      }
+    ],
+    "impossible_combination_count": 0,
+    "realism_score": 1.0
+  },
+  "dataset_summary": "Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 37 rows under the seasonal back to school scenario.",
+  "key_observations": [
+    "Collateral shares normalize to 0.00% of total inventory, keeping the mix internally consistent.",
+    "Jewelry and many electronics rows retain higher liquidity scores than tools or miscellaneous collateral, which preserves realistic resale asymmetry.",
+    "The seasonal back to school scenario keeps both mid-value and high-value subcategories in the same bundle so analysts can see meaningful spread instead of flat averages."
+  ],
+  "related_dataset_references": [
+    {
+      "artifact_id": "19579386",
+      "build_timestamp": "2026-04-14T18:01:42.376882+00:00",
+      "canonical_hash": "64b980a845ec59242d5d11751dcab0f22002f8a49efc4fda90797db4bb9c6be1",
+      "dataset_name": "regional_pawn_market_conditions",
+      "dataset_version": "2026-04-13",
+      "doi": "10.5281/zenodo.19579386",
+      "external_url": "https://zenodo.org/record/19579386",
+      "platform": "zenodo",
+      "scenario_name": "holiday_liquidity_spike",
+      "status": "published"
+    },
+    {
+      "artifact_id": "19579387",
+      "build_timestamp": "2026-04-14T18:01:47.634560+00:00",
+      "canonical_hash": "71917cbcd7d6a343f629a3ad60ca7ae4b237e0502a2460db02eaa59a9ef79a51",
+      "dataset_name": "pawn_loan_activity",
+      "dataset_version": "2026-04-14",
+      "doi": "10.5281/zenodo.19579387",
+      "external_url": "https://zenodo.org/record/19579387",
+      "platform": "zenodo",
+      "scenario_name": "baseline",
+      "status": "published"
+    },
+    {
+      "artifact_id": "19583190",
+      "build_timestamp": "2026-04-15T01:00:21.545385+00:00",
+      "canonical_hash": "5417f41d712b1841d7a5f23a63a0bc34c4dcfa204947a98f54e65923621b04e9",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "dataset_version": "2026-04-15",
+      "doi": "10.5281/zenodo.19583190",
+      "external_url": "https://zenodo.org/record/19583190",
+      "platform": "zenodo",
+      "scenario_name": "high_gold_price_cycle",
+      "status": "published"
+    },
+    {
+      "artifact_id": "19600668",
+      "build_timestamp": "2026-04-16T00:09:23.219207+00:00",
+      "canonical_hash": "cf18a978ff30966252bfb93dc60fa9f3faa4c72785219a60eeb8dd16f74525c9",
+      "dataset_name": "customer_behavior_segments",
+      "dataset_version": "2026-04-16",
+      "doi": "10.5281/zenodo.19600668",
+      "external_url": "https://zenodo.org/record/19600668",
+      "platform": "zenodo",
+      "scenario_name": "consumer_stress_cycle",
+      "status": "published"
+    }
+  ],
+  "seed": 34626799717090,
+  "synthetic_label": "Synthetic dataset for research and modeling. No real customer-level data included.",
+  "version_key": "collateral_distribution_and_liquidity:2026-04-17:seasonal_back_to_school",
+  "build_state": "validated",
+  "publication_state": "publishing",
+  "authority_complete": false,
+  "authority_summary": {},
+  "authority_root_reference": {
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "label": "Full dataset index",
+    "platform": "github_index",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "artifact_manifest_path": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\artifact_manifest.json",
+  "dynamic_citations": "*   **Google trax**: Structural and formatting methodologies adapted from [trax](https://github.com/google/trax) - *Trax \u2014 Deep Learning with Clear Code and Speed*",
+  "external_publication_targets": {
+    "enabled": true,
+    "targets": [
+      {
+        "platform": "zenodo",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "kaggle",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "github",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      },
+      {
+        "platform": "figshare",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "new_version"
+      },
+      {
+        "platform": "openml",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "create"
+      },
+      {
+        "platform": "huggingface",
+        "state": "approved_for_publish",
+        "reason": null,
+        "mode": "update"
+      }
+    ],
+    "canonical_hash": "0b31f59019016619d4f0eb0e6863448056545cd964a767e59e1e414b696d07dd"
+  },
+  "platform_backlink_requirements": {
+    "github_backlinks_required": true
+  },
+  "prior_publications": {
+    "data_world": null,
+    "dataverse": null,
+    "figshare": {
+      "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+      "platform": "figshare",
+      "external_url": "https://api.figshare.com/v2/articles/31988883",
+      "doi": "10.6084/m9.figshare.31988883.v1",
+      "artifact_id": "31988883",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"create\",\n  \"article_id\": \"31988883\",\n  \"validation_summary\": {\n    \"title_length\": 47,\n    \"description_length\": 1734,\n    \"tags_count\": 7,\n    \"references_count\": 5,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://api.figshare.com/v2\"\n  },\n  \"create_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"article_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"clear_summary\": {\n    \"existing_file_count\": 0,\n    \"deleted_file_ids\": [],\n    \"list_attempts\": [\n      {\n        \"attempt\": 1,\n        \"outcome\": \"success\",\n        \"status_code\": 200\n      }\n    ],\n    \"delete_attempts\": []\n  },\n  \"upload_summaries\": [\n    {\n      \"name\": \"collateral_distribution_and_liquidity.csv\",\n      \"file_id\": \"63647754\",\n      \"size\": 3435,\n      \"md5\": \"3e30aeb5399036d52420fbfff7b522f8\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 3434,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"collateral_distribution_and_liquidity.json\",\n      \"file_id\": \"63647757\",\n      \"size\": 15281,\n      \"md5\": \"b7077e431a2ed5a37b89f7e3214a3a4c\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 15280,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"README.md\",\n      \"file_id\": \"63647760\",\n      \"size\": 3446,\n      \"md5\": \"6ee18a6b21d2de69569558dfe609dce6\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 3445,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"file_id\": \"63647763\",\n      \"size\": 22287,\n      \"md5\": \"2dcbb45dd549b33af31c41e58413aa0e\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 22286,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"file_id\": \"63647766\",\n      \"size\": 6389,\n      \"md5\": \"1a6af41886efe4c78606a8ceb5cf8180\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 6388,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    },\n    {\n      \"name\": \"collateral_distribution_and_liquidity.parquet\",\n      \"file_id\": \"63647769\",\n      \"size\": 9651,\n      \"md5\": \"0bdb6ae95685380ab2182c94c54d2870\",\n      \"create_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ],\n      \"file_listing_attempts\": [],\n      \"detail_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ],\n      \"part_attempts\": [\n        {\n          \"part_no\": 1,\n          \"start_offset\": 0,\n          \"end_offset\": 9650,\n          \"attempts\": [\n            {\n              \"attempt\": 1,\n              \"outcome\": \"success\",\n              \"status_code\": 200\n            }\n          ]\n        }\n      ],\n      \"complete_attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 202\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 205\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"public_lookup_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"draft_payload\": {\n    \"id\": 31988883,\n    \"version\": 0\n  },\n  \"doi\": \"10.6084/m9.figshare.31988883.v1\"\n}",
+      "first_attempt_utc": "2026-04-12T00:15:35.751393+00:00",
+      "last_attempt_utc": "2026-04-12T00:15:35.751393+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-12",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-12T00:13:42.228119+00:00"
+    },
+    "github": {
+      "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+      "platform": "github",
+      "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-12/README.md",
+      "doi": null,
+      "artifact_id": "empirgold-ctrl/pawn-datasets-research:datasets/collateral_distribution_and_liquidity/2026-04-12",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n  \"branch\": \"main\",\n  \"validation_summary\": {\n    \"repo\": \"empirgold-ctrl/pawn-datasets-research\",\n    \"branch\": \"main\",\n    \"cross_reference_count\": 4,\n    \"required_artifacts_present\": true\n  },\n  \"master_index_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md\",\n  \"master_index_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n  \"dataset_readme_url\": \"https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-12/README.md\",\n  \"dataset_readme_raw_url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/collateral_distribution_and_liquidity/2026-04-12/README.md\",\n  \"uploaded_files\": [\n    {\n      \"path\": \"README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"dataset_index.json\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/README.md\",\n      \"status_code\": 200,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-12/README.md\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-12/metadata.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-12/artifact_manifest.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"path\": \"datasets/collateral_distribution_and_liquidity/2026-04-12/version_record.json\",\n      \"status_code\": 201,\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"public_checks\": [\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    },\n    {\n      \"url\": \"https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/datasets/collateral_distribution_and_liquidity/2026-04-12/README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 200\n        }\n      ]\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-12T00:15:35.776144+00:00",
+      "last_attempt_utc": "2026-04-12T00:15:35.776144+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-12",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-12T00:13:42.228119+00:00"
+    },
+    "huggingface": {
+      "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+      "platform": "huggingface",
+      "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity",
+      "doi": null,
+      "artifact_id": "CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"repo_id\": \"CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity\",\n  \"resolved_username\": \"CollateralAnalytics\",\n  \"dataset_name\": \"collateral_distribution_and_liquidity\",\n  \"dataset_version\": \"2026-04-12\",\n  \"scenario_name\": \"seasonal_back_to_school\",\n  \"create_attempts\": [\n    {\n      \"outcome\": \"success\",\n      \"repo_id\": \"CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity\"\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"outcome\": \"success\"\n    }\n  ],\n  \"cross_platform_references_count\": 5\n}",
+      "first_attempt_utc": "2026-04-12T00:15:35.779424+00:00",
+      "last_attempt_utc": "2026-04-12T00:15:35.779424+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-12",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-12T00:13:42.228119+00:00"
+    },
+    "kaggle": {
+      "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+      "platform": "kaggle",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-collateral-liquidity",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"stdout\": \"Starting upload for file artifact_manifest.json\\nWarning: Looks like you're using an outdated `kaggle` version (installed: 2.0.0), please consider upgrading to the latest version (2.0.1)\\nUpload successful: artifact_manifest.json (6KB)\\nStarting upload for file collateral_distribution_and_liquidity.csv\\nUpload successful: collateral_distribution_and_liquidity.csv (3KB)\\nStarting upload for file collateral_distribution_and_liquidity.json\\nUpload successful: collateral_distribution_and_liquidity.json (15KB)\\nStarting upload for file collateral_distribution_and_liquidity.parquet\\nUpload successful: collateral_distribution_and_liquidity.parquet (9KB)\\nStarting upload for file metadata.json\\nUpload successful: metadata.json (22KB)\\nStarting upload for file README.md\\nUpload successful: README.md (3KB)\\nDataset version is being created. Please check progress at https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity\",\n  \"stderr\": \"0%|          | 0.00/6.21k [00:00<?, ?B/s]\\n100%|##########| 6.21k/6.21k [00:00<00:00, 19.5kB/s]\\n\\n  0%|          | 0.00/3.35k [00:00<?, ?B/s]\\n100%|##########| 3.35k/3.35k [00:00<00:00, 11.2kB/s]\\n\\n  0%|          | 0.00/14.9k [00:00<?, ?B/s]\\n100%|##########| 14.9k/14.9k [00:00<00:00, 46.8kB/s]\\n\\n  0%|          | 0.00/9.42k [00:00<?, ?B/s]\\n100%|##########| 9.42k/9.42k [00:00<00:00, 31.0kB/s]\\n\\n  0%|          | 0.00/21.7k [00:00<?, ?B/s]\\n100%|##########| 21.7k/21.7k [00:00<00:00, 72.5kB/s]\\n\\n  0%|          | 0.00/3.34k [00:00<?, ?B/s]\\n100%|##########| 3.34k/3.34k [00:00<00:00, 10.7kB/s]\",\n  \"dataset_exists\": true,\n  \"dataset_id\": \"genefur/kgp-synthetic-collateral-liquidity\",\n  \"validation_summary\": {\n    \"title_length\": 34,\n    \"subtitle_length\": 65,\n    \"slug\": \"kgp-synthetic-collateral-liquidity\",\n    \"readme_length\": 3359,\n    \"required_artifacts_present\": true\n  },\n  \"status_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ],\n  \"public_page_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"metadata_update_attempts\": [],\n  \"metadata_update_error\": null,\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\"\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-12T00:15:35.762178+00:00",
+      "last_attempt_utc": "2026-04-12T00:15:35.762178+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-12",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-12T00:13:42.228119+00:00"
+    },
+    "mendeley_data": null,
+    "openml": {
+      "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+      "platform": "openml",
+      "external_url": "https://www.openml.org/d/47181",
+      "doi": null,
+      "artifact_id": "47181",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"dataset_id\": \"47181\",\n  \"openml_url\": \"https://www.openml.org/d/47181\",\n  \"target_column\": null,\n  \"row_id_column\": null,\n  \"ignore_columns\": [],\n  \"collection_date\": \"2026-04-12\",\n  \"server\": \"https://www.openml.org/api/v1/xml\",\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ]\n}",
+      "first_attempt_utc": "2026-04-12T00:15:35.760571+00:00",
+      "last_attempt_utc": "2026-04-12T00:15:35.760571+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-12",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-12T00:13:42.228119+00:00"
+    },
+    "zenodo": {
+      "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19521225",
+      "doi": "10.5281/zenodo.19521225",
+      "artifact_id": "19521225",
+      "status": "published",
+      "error_message": null,
+      "response_json": "{\n  \"mode\": \"new_version\",\n  \"deposition_id\": 19521225,\n  \"record_id\": 19521225,\n  \"conceptrecid\": \"19446295\",\n  \"validation_summary\": {\n    \"title_length\": 51,\n    \"description_length\": 2951,\n    \"creator_count\": 1,\n    \"keywords_count\": 8,\n    \"required_artifacts_present\": true,\n    \"api_base_url\": \"https://zenodo.org/api\"\n  },\n  \"new_version_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 201\n    }\n  ],\n  \"draft_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"clear_summary\": {\n    \"existing_file_count\": 6,\n    \"deleted_file_ids\": [\n      \"6a2427ea-8057-4ac3-8230-b859f21e9f3e\",\n      \"c6b0ad98-d12b-432d-9ef9-3539f317decf\",\n      \"1b76ec83-2af4-4035-83d7-9c1390ff2f0a\",\n      \"e40e8dd1-5a73-4e4e-9c4f-6126c4522f9e\",\n      \"45915421-efd4-452a-9b0c-2c0a7e47b3e7\",\n      \"4e05e889-094f-423e-9120-583969e42f78\"\n    ],\n    \"list_attempts\": [\n      {\n        \"attempt\": 1,\n        \"outcome\": \"success\",\n        \"status_code\": 200\n      }\n    ],\n    \"delete_attempts\": [\n      {\n        \"file_id\": \"6a2427ea-8057-4ac3-8230-b859f21e9f3e\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"c6b0ad98-d12b-432d-9ef9-3539f317decf\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"1b76ec83-2af4-4035-83d7-9c1390ff2f0a\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"e40e8dd1-5a73-4e4e-9c4f-6126c4522f9e\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"45915421-efd4-452a-9b0c-2c0a7e47b3e7\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      },\n      {\n        \"file_id\": \"4e05e889-094f-423e-9120-583969e42f78\",\n        \"attempts\": [\n          {\n            \"attempt\": 1,\n            \"outcome\": \"success\",\n            \"status_code\": 204\n          }\n        ]\n      }\n    ]\n  },\n  \"upload_results\": [\n    {\n      \"name\": \"collateral_distribution_and_liquidity.csv\",\n      \"checksum\": \"md5:3e30aeb5399036d52420fbfff7b522f8\",\n      \"size\": 3435\n    },\n    {\n      \"name\": \"collateral_distribution_and_liquidity.json\",\n      \"checksum\": \"md5:b7077e431a2ed5a37b89f7e3214a3a4c\",\n      \"size\": 15281\n    },\n    {\n      \"name\": \"README.md\",\n      \"checksum\": \"md5:a643c34a58ec2ef387d3418752ab4f13\",\n      \"size\": 3326\n    },\n    {\n      \"name\": \"metadata.json\",\n      \"checksum\": \"md5:044f5c37faa34c17952cd763a88d2299\",\n      \"size\": 22057\n    },\n    {\n      \"name\": \"artifact_manifest.json\",\n      \"checksum\": \"md5:9c0aa0bc04aa2660fbfc394b3bd06a16\",\n      \"size\": 6159\n    },\n    {\n      \"name\": \"collateral_distribution_and_liquidity.parquet\",\n      \"checksum\": \"md5:0bdb6ae95685380ab2182c94c54d2870\",\n      \"size\": 9651\n    }\n  ],\n  \"upload_attempts\": [\n    {\n      \"file\": \"collateral_distribution_and_liquidity.csv\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"collateral_distribution_and_liquidity.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"README.md\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"metadata.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"artifact_manifest.json\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    },\n    {\n      \"file\": \"collateral_distribution_and_liquidity.parquet\",\n      \"attempts\": [\n        {\n          \"attempt\": 1,\n          \"outcome\": \"success\",\n          \"status_code\": 201\n        }\n      ]\n    }\n  ],\n  \"metadata_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"publish_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 202\n    }\n  ],\n  \"public_validation_attempts\": [\n    {\n      \"attempt\": 1,\n      \"outcome\": \"success\",\n      \"status_code\": 200\n    }\n  ],\n  \"doi\": \"10.5281/zenodo.19521225\"\n}",
+      "first_attempt_utc": "2026-04-12T00:15:35.744579+00:00",
+      "last_attempt_utc": "2026-04-12T00:15:35.744579+00:00",
+      "attempt_count": 1,
+      "dataset_version": "2026-04-12",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-12T00:13:42.228119+00:00"
+    }
+  },
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml",
+    "huggingface"
+  ],
+  "cross_platform_references": {
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/32038635",
+      "doi": "10.6084/m9.figshare.32038635.v1",
+      "artifact_id": "32038635"
+    },
+    "huggingface": {
+      "platform": "huggingface",
+      "label": "HuggingFace dataset mirror",
+      "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity",
+      "doi": null,
+      "artifact_id": "CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-collateral-liquidity"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47181",
+      "doi": null,
+      "artifact_id": "47181"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19618415",
+      "doi": "10.5281/zenodo.19618415",
+      "artifact_id": "19618415"
+    }
+  }
+}

@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-16T00:11:04.124904+00:00`
+Last updated: `2026-04-17T00:26:21.924400+00:00`
 
 ## Dataset Families
 
@@ -12,13 +12,22 @@ Last updated: `2026-04-16T00:11:04.124904+00:00`
 
 Synthetic category-level view of collateral mix, value bands, and liquidity characteristics.
 
-- Latest version: `2026-04-12`
+- Latest version: `2026-04-17`
 - Latest scenario: `seasonal_back_to_school`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/README.md
-- Latest summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.
+- Latest summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 37 rows under the seasonal back to school scenario.
 
 #### Version History
 
+- `2026-04-17` | `seasonal_back_to_school` | rows `37` | realism `1.0`
+  - Summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 37 rows under the seasonal back to school scenario.
+  - Zenodo DOI: 10.5281/zenodo.19618415
+  - Zenodo: https://zenodo.org/record/19618415
+  - Figshare: https://api.figshare.com/v2/articles/32038635
+  - Openml: https://www.openml.org/d/47181
+  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity
+  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-17/README.md
+  - Huggingface: https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity
 - `2026-04-12` | `seasonal_back_to_school` | rows `48` | realism `1.0`
   - Summary: Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario.
   - Zenodo DOI: 10.5281/zenodo.19521225
@@ -52,7 +61,6 @@ Synthetic behavioral segmentation of pawn customer patterns without identifying 
   - Zenodo DOI: 10.5281/zenodo.19600668
   - Zenodo: https://zenodo.org/record/19600668
   - Figshare: https://api.figshare.com/v2/articles/32030358
-  - Openml: https://www.openml.org/d/47180
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments
   - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-16/README.md
   - Huggingface: https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-customer-behavior-segments

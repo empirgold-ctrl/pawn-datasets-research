@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-04-16T00:11:04.124904+00:00",
+  "generated_utc": "2026-04-17T00:26:21.924400+00:00",
   "families": [
     {
       "dataset_name": "collateral_distribution_and_liquidity",
@@ -7,6 +7,47 @@
       "family_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/README.md",
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
+        {
+          "canonical_hash": "0b31f59019016619d4f0eb0e6863448056545cd964a767e59e1e414b696d07dd",
+          "dataset_version": "2026-04-17",
+          "scenario_name": "seasonal_back_to_school",
+          "row_count": 37,
+          "build_timestamp": "2026-04-17T00:19:34.898518+00:00",
+          "dataset_summary": "Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 37 rows under the seasonal back to school scenario.",
+          "description": "Synthetic category-level view of collateral mix, value bands, and liquidity characteristics.",
+          "key_observations": [
+            "Collateral shares normalize to 0.00% of total inventory, keeping the mix internally consistent.",
+            "Jewelry and many electronics rows retain higher liquidity scores than tools or miscellaneous collateral, which preserves realistic resale asymmetry.",
+            "The seasonal back to school scenario keeps both mid-value and high-value subcategories in the same bundle so analysts can see meaningful spread instead of flat averages."
+          ],
+          "realism_score": 1.0,
+          "links": {
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/32038635",
+              "doi": "10.6084/m9.figshare.32038635.v1"
+            },
+            "huggingface": {
+              "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity",
+              "doi": null
+            },
+            "kaggle": {
+              "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
+              "doi": null
+            },
+            "openml": {
+              "external_url": "https://www.openml.org/d/47181",
+              "doi": null
+            },
+            "zenodo": {
+              "external_url": "https://zenodo.org/record/19618415",
+              "doi": "10.5281/zenodo.19618415"
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-17/README.md",
+              "doi": null
+            }
+          }
+        },
         {
           "dataset_name": "collateral_distribution_and_liquidity",
           "canonical_hash": "648d207daea6369e0956e07b0d9a183271194f32b559029bade26d43f9287b76",
@@ -84,9 +125,9 @@
           }
         }
       ],
-      "latest_version": "2026-04-12",
+      "latest_version": "2026-04-17",
       "latest_scenario": "seasonal_back_to_school",
-      "latest_summary": "Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 48 rows under the seasonal back to school scenario."
+      "latest_summary": "Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 37 rows under the seasonal back to school scenario."
     },
     {
       "dataset_name": "customer_behavior_segments",
@@ -95,6 +136,7 @@
       "master_index_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
       "versions": [
         {
+          "dataset_name": "customer_behavior_segments",
           "canonical_hash": "cf18a978ff30966252bfb93dc60fa9f3faa4c72785219a60eeb8dd16f74525c9",
           "dataset_version": "2026-04-16",
           "scenario_name": "consumer_stress_cycle",
@@ -109,29 +151,25 @@
           ],
           "realism_score": 1.0,
           "links": {
-            "figshare": {
-              "external_url": "https://api.figshare.com/v2/articles/32030358",
-              "doi": "10.6084/m9.figshare.32030358.v1"
-            },
             "huggingface": {
               "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-customer-behavior-segments",
+              "doi": null
+            },
+            "github": {
+              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-16/README.md",
               "doi": null
             },
             "kaggle": {
               "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-customer-behavior-segments",
               "doi": null
             },
-            "openml": {
-              "external_url": "https://www.openml.org/d/47180",
-              "doi": null
+            "figshare": {
+              "external_url": "https://api.figshare.com/v2/articles/32030358",
+              "doi": "10.6084/m9.figshare.32030358.v1"
             },
             "zenodo": {
               "external_url": "https://zenodo.org/record/19600668",
               "doi": "10.5281/zenodo.19600668"
-            },
-            "github": {
-              "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/customer_behavior_segments/2026-04-16/README.md",
-              "doi": null
             }
           }
         },

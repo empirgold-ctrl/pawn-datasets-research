@@ -1,0 +1,146 @@
+{
+  "dataset_name": "collateral_distribution_and_liquidity",
+  "dataset_version": "2026-04-17",
+  "scenario_name": "seasonal_back_to_school",
+  "version_key": "collateral_distribution_and_liquidity:2026-04-17:seasonal_back_to_school",
+  "seed": 34626799717090,
+  "row_count": 37,
+  "schema_signature": "6ebf2e81095a7198de8719c35be8bb4dae9d90f171f361cbb2104badc1fc14a3",
+  "canonical_hash": "0b31f59019016619d4f0eb0e6863448056545cd964a767e59e1e414b696d07dd",
+  "file_paths": {
+    "csv": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\collateral_distribution_and_liquidity.csv",
+    "json": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\collateral_distribution_and_liquidity.json",
+    "parquet": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\collateral_distribution_and_liquidity.parquet",
+    "readme": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\README.md",
+    "metadata": "C:\\gmb_final\\data\\generated_datasets\\synthetic\\collateral_distribution_and_liquidity\\2026-04-17_0b31f5901901\\metadata.json"
+  },
+  "dataset_summary": "Synthetic collateral mix data shows how value, liquidity, and seasonality differ across core pawn inventory categories and subcategories. This build contains 37 rows under the seasonal back to school scenario.",
+  "key_observations": [
+    "Collateral shares normalize to 0.00% of total inventory, keeping the mix internally consistent.",
+    "Jewelry and many electronics rows retain higher liquidity scores than tools or miscellaneous collateral, which preserves realistic resale asymmetry.",
+    "The seasonal back to school scenario keeps both mid-value and high-value subcategories in the same bundle so analysts can see meaningful spread instead of flat averages."
+  ],
+  "validation_summary": {
+    "checks": [
+      {
+        "detail": "Dataset correctly wrapped live Open-Meteo/CoinGecko matrix",
+        "name": "api_schema_validated",
+        "passed": true
+      },
+      {
+        "detail": "Skipped Refchecker validation (refchecker module not available).",
+        "name": "refchecker_faithfulness",
+        "passed": true
+      }
+    ],
+    "impossible_combination_count": 0,
+    "realism_score": 1.0
+  },
+  "related_dataset_references": [
+    {
+      "artifact_id": "19579386",
+      "build_timestamp": "2026-04-14T18:01:42.376882+00:00",
+      "canonical_hash": "64b980a845ec59242d5d11751dcab0f22002f8a49efc4fda90797db4bb9c6be1",
+      "dataset_name": "regional_pawn_market_conditions",
+      "dataset_version": "2026-04-13",
+      "doi": "10.5281/zenodo.19579386",
+      "external_url": "https://zenodo.org/record/19579386",
+      "platform": "zenodo",
+      "scenario_name": "holiday_liquidity_spike",
+      "status": "published"
+    },
+    {
+      "artifact_id": "19579387",
+      "build_timestamp": "2026-04-14T18:01:47.634560+00:00",
+      "canonical_hash": "71917cbcd7d6a343f629a3ad60ca7ae4b237e0502a2460db02eaa59a9ef79a51",
+      "dataset_name": "pawn_loan_activity",
+      "dataset_version": "2026-04-14",
+      "doi": "10.5281/zenodo.19579387",
+      "external_url": "https://zenodo.org/record/19579387",
+      "platform": "zenodo",
+      "scenario_name": "baseline",
+      "status": "published"
+    },
+    {
+      "artifact_id": "19583190",
+      "build_timestamp": "2026-04-15T01:00:21.545385+00:00",
+      "canonical_hash": "5417f41d712b1841d7a5f23a63a0bc34c4dcfa204947a98f54e65923621b04e9",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "dataset_version": "2026-04-15",
+      "doi": "10.5281/zenodo.19583190",
+      "external_url": "https://zenodo.org/record/19583190",
+      "platform": "zenodo",
+      "scenario_name": "high_gold_price_cycle",
+      "status": "published"
+    },
+    {
+      "artifact_id": "19600668",
+      "build_timestamp": "2026-04-16T00:09:23.219207+00:00",
+      "canonical_hash": "cf18a978ff30966252bfb93dc60fa9f3faa4c72785219a60eeb8dd16f74525c9",
+      "dataset_name": "customer_behavior_segments",
+      "dataset_version": "2026-04-16",
+      "doi": "10.5281/zenodo.19600668",
+      "external_url": "https://zenodo.org/record/19600668",
+      "platform": "zenodo",
+      "scenario_name": "consumer_stress_cycle",
+      "status": "published"
+    }
+  ],
+  "cross_platform_references": {
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/32038635",
+      "doi": "10.6084/m9.figshare.32038635.v1",
+      "artifact_id": "32038635"
+    },
+    "huggingface": {
+      "platform": "huggingface",
+      "label": "HuggingFace dataset mirror",
+      "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity",
+      "doi": null,
+      "artifact_id": "CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-collateral-liquidity"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47181",
+      "doi": null,
+      "artifact_id": "47181"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19618415",
+      "doi": "10.5281/zenodo.19618415",
+      "artifact_id": "19618415"
+    }
+  },
+  "cross_link_verification": {},
+  "authority_root_reference": {
+    "external_url": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "label": "Full dataset index",
+    "platform": "github_index",
+    "raw_url": "https://raw.githubusercontent.com/empirgold-ctrl/pawn-datasets-research/main/README.md"
+  },
+  "authority_complete": false,
+  "authority_summary": {},
+  "target_platforms": [
+    "zenodo",
+    "kaggle",
+    "github",
+    "figshare",
+    "openml",
+    "huggingface"
+  ],
+  "publication_results": [],
+  "build_state": "validated",
+  "publication_state": "publishing"
+}

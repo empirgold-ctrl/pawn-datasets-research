@@ -1,0 +1,104 @@
+{
+  "dataset_name": "regional_pawn_market_conditions",
+  "dataset_version": "2026-04-18",
+  "scenario_name": "holiday_liquidity_spike",
+  "row_count": 37,
+  "dataset_summary": "Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 37 rows under the holiday liquidity spike scenario.",
+  "key_observations": [
+    "Consumer stress and default rates move together with a modeled correlation of 0.00.",
+    "Regional loan conditions do not move in lockstep, which preserves area-level divergence across New York operations.",
+    "This build includes 37 monthly regional records under the holiday liquidity spike scenario for longitudinal analysis."
+  ],
+  "related_dataset_references": [
+    {
+      "canonical_hash": "71917cbcd7d6a343f629a3ad60ca7ae4b237e0502a2460db02eaa59a9ef79a51",
+      "dataset_name": "pawn_loan_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19579387",
+      "doi": "10.5281/zenodo.19579387",
+      "artifact_id": "19579387",
+      "status": "published",
+      "dataset_version": "2026-04-14",
+      "scenario_name": "baseline",
+      "build_timestamp": "2026-04-14T18:01:47.634560+00:00"
+    },
+    {
+      "canonical_hash": "5417f41d712b1841d7a5f23a63a0bc34c4dcfa204947a98f54e65923621b04e9",
+      "dataset_name": "gold_price_vs_pawn_activity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19583190",
+      "doi": "10.5281/zenodo.19583190",
+      "artifact_id": "19583190",
+      "status": "published",
+      "dataset_version": "2026-04-15",
+      "scenario_name": "high_gold_price_cycle",
+      "build_timestamp": "2026-04-15T01:00:21.545385+00:00"
+    },
+    {
+      "canonical_hash": "cf18a978ff30966252bfb93dc60fa9f3faa4c72785219a60eeb8dd16f74525c9",
+      "dataset_name": "customer_behavior_segments",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19600668",
+      "doi": "10.5281/zenodo.19600668",
+      "artifact_id": "19600668",
+      "status": "published",
+      "dataset_version": "2026-04-16",
+      "scenario_name": "consumer_stress_cycle",
+      "build_timestamp": "2026-04-16T00:09:23.219207+00:00"
+    },
+    {
+      "canonical_hash": "0b31f59019016619d4f0eb0e6863448056545cd964a767e59e1e414b696d07dd",
+      "dataset_name": "collateral_distribution_and_liquidity",
+      "platform": "zenodo",
+      "external_url": "https://zenodo.org/record/19618415",
+      "doi": "10.5281/zenodo.19618415",
+      "artifact_id": "19618415",
+      "status": "published",
+      "dataset_version": "2026-04-17",
+      "scenario_name": "seasonal_back_to_school",
+      "build_timestamp": "2026-04-17T00:19:34.898518+00:00"
+    }
+  ],
+  "cross_platform_references": {
+    "figshare": {
+      "platform": "figshare",
+      "label": "Figshare dataset mirror",
+      "external_url": "https://api.figshare.com/v2/articles/32048673",
+      "doi": "10.6084/m9.figshare.32048673.v1",
+      "artifact_id": "32048673"
+    },
+    "huggingface": {
+      "platform": "huggingface",
+      "label": "HuggingFace dataset mirror",
+      "external_url": "https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-regional-pawn-market-conditions",
+      "doi": null,
+      "artifact_id": "CollateralAnalytics/kgp-synthetic-regional-pawn-market-conditions"
+    },
+    "kaggle": {
+      "platform": "kaggle",
+      "label": "Kaggle dataset mirror",
+      "external_url": "https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions",
+      "doi": null,
+      "artifact_id": "genefur/kgp-synthetic-regional-pawn-market-conditions"
+    },
+    "openml": {
+      "platform": "openml",
+      "label": "OpenML dataset record",
+      "external_url": "https://www.openml.org/d/47183",
+      "doi": null,
+      "artifact_id": "47183"
+    },
+    "zenodo": {
+      "platform": "zenodo",
+      "label": "Zenodo archive record",
+      "external_url": "https://zenodo.org/record/19637506",
+      "doi": "10.5281/zenodo.19637506",
+      "artifact_id": "19637506"
+    }
+  },
+  "github_urls": {
+    "master_index": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/README.md",
+    "family_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/README.md",
+    "version_page": "https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-18/README.md"
+  }
+}

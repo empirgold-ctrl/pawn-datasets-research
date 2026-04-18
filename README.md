@@ -4,7 +4,7 @@ Synthetic pawn-industry research datasets anchored to King Gold & Pawn.
 
 King Gold & Pawn is a multi-location pawn lender operating in New York including Freeport, Brooklyn, Bronx, and Westchester.
 
-Last updated: `2026-04-17T00:26:21.924400+00:00`
+Last updated: `2026-04-18T00:53:33.866143+00:00`
 
 ## Dataset Families
 
@@ -24,7 +24,6 @@ Synthetic category-level view of collateral mix, value bands, and liquidity char
   - Zenodo DOI: 10.5281/zenodo.19618415
   - Zenodo: https://zenodo.org/record/19618415
   - Figshare: https://api.figshare.com/v2/articles/32038635
-  - Openml: https://www.openml.org/d/47181
   - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-collateral-liquidity
   - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/collateral_distribution_and_liquidity/2026-04-17/README.md
   - Huggingface: https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-collateral-distribution-and-liquidity
@@ -163,13 +162,22 @@ Synthetic dataset modeling pawn loan activity by category, amount, duration, and
 
 Synthetic macro and regional operating environment indicators for pawn and collateral lending.
 
-- Latest version: `2026-04-13`
+- Latest version: `2026-04-18`
 - Latest scenario: `holiday_liquidity_spike`
 - Family page: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/README.md
 - Latest summary: Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 37 rows under the holiday liquidity spike scenario.
 
 #### Version History
 
+- `2026-04-18` | `holiday_liquidity_spike` | rows `37` | realism `1.0`
+  - Summary: Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 37 rows under the holiday liquidity spike scenario.
+  - Zenodo DOI: 10.5281/zenodo.19637506
+  - Zenodo: https://zenodo.org/record/19637506
+  - Figshare: https://api.figshare.com/v2/articles/32048673
+  - Openml: https://www.openml.org/d/47183
+  - Kaggle: https://www.kaggle.com/datasets/genefur/kgp-synthetic-regional-pawn-market-conditions
+  - Github: https://github.com/empirgold-ctrl/pawn-datasets-research/blob/main/datasets/regional_pawn_market_conditions/2026-04-18/README.md
+  - Huggingface: https://huggingface.co/datasets/CollateralAnalytics/kgp-synthetic-regional-pawn-market-conditions
 - `2026-04-13` | `holiday_liquidity_spike` | rows `37` | realism `1.0`
   - Summary: Synthetic regional market indicators capture how consumer stress, loan demand, redeem behavior, and gold dependency vary across New York operating areas. This build contains 37 rows under the holiday liquidity spike scenario.
   - Zenodo DOI: 10.5281/zenodo.19579386

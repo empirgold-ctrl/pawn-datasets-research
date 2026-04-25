@@ -1,0 +1,11 @@
+{
+  "canonical_hash": "35c5ee7dfd619c34",
+  "dataset_name": "pawn_loan_activity",
+  "version": "2026-04-25",
+  "files": [
+    "dataset.csv",
+    "metadata.json",
+    "README.md"
+  ],
+  "generated_at": "2026-04-25T10:00:15.873549+00:00"
+}

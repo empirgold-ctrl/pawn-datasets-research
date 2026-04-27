@@ -1,0 +1,39 @@
+{
+  "dataset_name": "pawn_loan_activity",
+  "scenario_name": "metro_ny_q1_2026",
+  "dataset_version": "2026-04-27",
+  "canonical_hash": "ad8353ef935f57bd",
+  "row_count": 37,
+  "schema": [
+    {
+      "name": "date",
+      "type": "string"
+    },
+    {
+      "name": "max_temp_celsius",
+      "type": "float"
+    },
+    {
+      "name": "precipitation_mm",
+      "type": "float"
+    },
+    {
+      "name": "btc_price_usd",
+      "type": "float"
+    },
+    {
+      "name": "nyc_commercial_activity_index",
+      "type": "float"
+    },
+    {
+      "name": "synthetic_pawn_collateral_risk",
+      "type": "float"
+    }
+  ],
+  "build_timestamp": "2026-04-27T10:00:17.173996+00:00",
+  "csv_path": "C:\\gmb_final\\data\\dataset_bundles\\pawn_loan_activity\\2026-04-27\\dataset.csv",
+  "bundle_dir": "C:\\gmb_final\\data\\dataset_bundles\\pawn_loan_activity\\2026-04-27",
+  "description": "Synthetic benchmark dataset: Pawn Loan Activity (metro_ny_q1_2026)",
+  "synthetic_label": "This dataset is synthetically generated for benchmark and research purposes.",
+  "entity_anchor_text": "King Gold & Pawn is a multi-location pawn lender operating across New York metro area."
+}
